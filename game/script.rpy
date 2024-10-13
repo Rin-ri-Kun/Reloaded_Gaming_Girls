@@ -8,6 +8,7 @@ image school = "images/school.png"
 image library = "images/library.png"
 image darkness = "images/darkness.png"
 define SlowD = Dissolve(3.0)
+define weijiangfriendshippoints=0
 
 # The game starts here.
 
@@ -40,5 +41,68 @@ label start:
     e "TEST"
 
     # This ends the game.
+
+    jump scene1
+
+label scene1:
+    scene school1
+    show wei_jiang at left
+    with dissolve
+    show qu_yang at right
+    with dissolve
+    "Qu Yang walks to the school\'s central park (1st time)"
+    "What will Qu Yang do?"
+    menu:
+        "What will you do"
+        "Chat with Wei Jiang at the teaching building":
+            $ weijiangfriendshippoints +=1
+            jump scene2
+        "Head to the lab to find Wang Ze and Ling Fan":
+            jump scene2
+
+label scene2:
+    scene school2
+    show wei_jiang at left
+    with dissolve
+    show qu_yang at right
+    with dissolve
+    "Qu Yang walks to the school\'s central park (2nd time)"
+    "What will Qu Yang do?"
+    menu:
+        "What will you do"
+        "Chat with Wei Jiang at the teaching building":
+            $ weijiangfriendshippoints +=1
+            jump scene3
+        "Head to the lab to find Wang Ze and Ling Fan":
+            jump scene3
+
+label scene3:
+    scene school3
+    show wei_jiang at left
+    with dissolve
+    show qu_yang at right
+    with dissolve
+    "Qu Yang walks to the school\'s central park (3rd time)"
+    "What will Qu Yang do?"
+    menu:
+        "What will you do"
+        "Chat with Wei Jiang at the teaching building":
+            $ weijiangfriendshippoints +=1
+            if weijiangfriendshippoints >=2:
+                jump ending1
+            else:
+                jump ending2
+        "Head to the lab to find Wang Ze and Ling Fan":
+            jump ending2
+
+label ending1:
+    scene school
+    "Ending 1 reached! This is the lesbian route."
+
+    return
+
+label ending2:
+    scene school
+    "Ending 2 reached! This is the conquest route."
 
     return
