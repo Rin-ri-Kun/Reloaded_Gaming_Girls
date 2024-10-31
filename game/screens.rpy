@@ -100,9 +100,14 @@ screen say(who, what):
 
     window:
         id "window"
+        #if who is None:
+            #background Image("images/white.png", xalign=0.5, yalign=1.0)
 
         if who is not None:
-
+            if who == "weijiang":
+                background Image("gui/weijiang.jpg", xalign=0.5, yalign=1.0)
+            if who == "quyang":
+                background Image("gui/quyang.jpg", xalign=0.5, yalign=1.0)
             window:
                 id "namebox"
                 style "namebox"
@@ -136,7 +141,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Image("gui/textbox.jpg", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos

@@ -9,7 +9,8 @@ image library = "images/library.png"
 image darkness = "images/darkness.png"
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
-
+define quyang = Character("quyang")
+define weijiang = Character("weijiang")
 # The game starts here.
 
 label start:
@@ -39,6 +40,12 @@ label start:
     scene library with dissolve
 
     e "TEST"
+
+    quyang "test"
+
+    weijiang "test"
+
+    "test"
 
     # This ends the game.
 
