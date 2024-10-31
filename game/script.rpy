@@ -13,8 +13,13 @@ define quyang = Character("quyang")
 define weijiang = Character("weijiang")
 # The game starts here.
 
-label start:
+#default tb_design = "normal"
+while True: 
+    image textbox:
+        "gui/textbox_[tb_design].png"
 
+label start:
+    $ tb_design = "normal"
     #模拟移动，先用SALIGIA的素材代替
     show school:
         xalign 0.5
@@ -57,6 +62,8 @@ label scene1:
     with dissolve
     show qu_yang at right
     with dissolve
+    $ tb_design = "quyang"
+    
     "Qu Yang walks to the school\'s central park (1st time)"
     "What will Qu Yang do?"
     menu:
@@ -73,6 +80,8 @@ label scene2:
     with dissolve
     show qu_yang at right
     with dissolve
+    $ tb_design = "weijiang"
+    
     "Qu Yang walks to the school\'s central park (2nd time)"
     "What will Qu Yang do?"
     menu:

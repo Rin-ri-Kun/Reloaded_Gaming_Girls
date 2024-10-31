@@ -4,7 +4,11 @@
 
 init offset = -1
 
-
+default tb_design = "normal"
+image textbox = "gui/textbox_[tb_design].png"
+while True: 
+    image textbox:
+        "gui/textbox_[tb_design].png"
 ################################################################################
 ## Styles
 ################################################################################
@@ -100,14 +104,9 @@ screen say(who, what):
 
     window:
         id "window"
-        #if who is None:
-            #background Image("images/white.png", xalign=0.5, yalign=1.0)
 
         if who is not None:
-            if who == "weijiang":
-                background Image("gui/weijiang.jpg", xalign=0.5, yalign=1.0)
-            if who == "quyang":
-                background Image("gui/quyang.jpg", xalign=0.5, yalign=1.0)
+
             window:
                 id "namebox"
                 style "namebox"
@@ -141,7 +140,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.jpg", xalign=0.5, yalign=1.0)
+    background Transform("textbox", xalign=0.5, yalign=1.0) ###edit it into this
 
 style namebox:
     xpos gui.name_xpos
@@ -1536,9 +1535,13 @@ screen quick_menu():
             textbutton _("Menu") action ShowMenu()
 
 
-style window:
-    variant "small"
-    background "gui/phone/textbox.png"
+'''style window:
+    xalign 0.5
+    xfill True
+    yalign gui.textbox_yalign
+    ysize gui.textbox_height
+
+    background Transform("textbox", xalign=0.5, yalign=1.0)'''
 
 style radio_button:
     variant "small"

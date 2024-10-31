@@ -2,12 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 91: expected an indented block
-    if weijiangfriendshippoints>=2:
-
-File "game/script.rpy", line 93: invalid syntax
-    else:
-     ^
+File "game/script.rpy", line 18: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    image textbox:
+    ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Oct 12 20:48:23 2024
+Thu Oct 31 15:24:55 2024
