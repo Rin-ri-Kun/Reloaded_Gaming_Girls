@@ -47,7 +47,7 @@ label start:
 
     "test"
 
-    # This ends the game.
+
 
     jump scene1
 
