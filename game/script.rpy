@@ -9,8 +9,8 @@ image library = "images/library.png"
 image darkness = "images/darkness.png"
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
-define quyang = Character("quyang")
-define weijiang = Character("weijiang")
+#define quyang = Character("quyang")
+#define weijiang = Character("weijiang")
 # The game starts here.
 
 #default tb_design = "normal"
@@ -19,6 +19,10 @@ while True:
         "gui/textbox_[tb_design].png"
 
 label start:
+    $ tb_design = "normal"
+    
+
+label test:
     $ tb_design = "normal"
     #模拟移动，先用SALIGIA的素材代替
     show school:
