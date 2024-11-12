@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "game/screens.rpy", line 143, in <module>
-    background Transform(textbox, xalign=0.5, yalign=1.0) ###edit it into this
-NameError: name 'textbox' is not defined
+While running game code:
+  File "game/script.rpy", line 6, in script
+    define d = character("Donna")
+  File "game/script.rpy", line 6, in <module>
+    define d = character("Donna")
+NameError: name 'character' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/main.py", line 652, in main
-    run(restart)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/translation/__init__.py", line 702, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/translation/__init__.py", line 796, in change_language
-    new_change_language(tl, language)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/translation/__init__.py", line 748, in new_change_language
-    i.apply()
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2800, in apply
-    value = renpy.python.py_eval(expr)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
+  File "game/script.rpy", line 6, in script
+    define d = character("Donna")
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2235, in execute
+    self.set()
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2249, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 143, in <module>
-    background Transform(textbox, xalign=0.5, yalign=1.0) ###edit it into this
-NameError: name 'textbox' is not defined
+  File "game/script.rpy", line 6, in <module>
+    define d = character("Donna")
+NameError: name 'character' is not defined
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.3.2.24090902
 Reloaded_Gaming_Girls 1.0
-Thu Oct 31 15:41:39 2024
+Mon Nov 11 22:11:17 2024

@@ -3,7 +3,12 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define d = Character("Donna")
+define a = Character("Allie")
+define k = Character("Mackenzie")
+define l = Character("Lindsey")
+define dm = Character("Donna’s Mother")
+
 image school = "images/school.png"
 image library = "images/library.png"
 image darkness = "images/darkness.png"
@@ -20,7 +25,70 @@ while True:
 
 label start:
     $ tb_design = "normal"
+    scene restaurant
+    with dissolve
+    play music "audio/school2.mp3"
+    "A Certain Fast Food Restaurant just north to the Canaryville High School is quite an interesting place. Of course it is—anything connected to the prestigious Canaryville High School has to be interesting."
+    "And now, our remarkable story is about to begin…"
+
+    show wj
+    with dissolve
+    l "No matter when I come by, this place is always packed. Hi, a Combo A, please!"
+    "Food in hand, Lindsey starts to look for a seat."
+    "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
+    scene cg01
+    l "Hi there! Would you mind if I sit here?"
+    "With a nod from the girl, Wei Jiang pulls out a chair and sits beside her. She takes a sip of her drink and then, always the chatty type, strikes up a conversation."
+    scene restaurant
+    show wj at left
+    show qy at right
+    l "Your laptop looks really nice! What are you working on?"
+    "The girl turns her laptop toward Wei Jiang. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
+    l "Wow, I play this game, too! Do you need a teammate? I'm on the cat server—maybe we could play together sometime!"
+    l "Oh, sorry… I just got so excited seeing someone else playing that I forgot to introduce myself! I'm Lindsey from 9th Grade. Nice to meet you! What's your name?"
+    d "Donna. I’m in 9th grade too. Same server as well."
+    "Donna speaks in a calm, steady tone, almost devoid of emotion. But something else catches Lindsey's eye: a few thick notebooks are spread out beside Donna's laptop, their open pages densely packed with formulas and diagrams."
+    "These must be advanced—no, honor-level materials!"
+    "{i}So even top students play games like this?{/i} Lindsey wonders. But she quickly snaps back to reality."
+    l "Really? We are on the same server? What a coincidence! Donna, wanna add friends and play together? My ID is Tsuchi."
+    "Lindsey’s face lights up with a smile."
+    "Donna gapes at her, looking like her mind has drifted somewhere beyond this universe. She only snaps back to the present when Lindsey waves a hand in front of her."
+    d "Friend request sent. My ID is Yurine."
+    "Her tone remains as flat and emotionless as before."
+    l "Let’s follow each other on Onstagram too! What’s your username?"
+    hide wj 
+    with dissolve
+    hide qy
+    with dissolve
+    "After exchanging contact info, the two leave the restaurant in their own directions."
+    scene room2
+    with dissolve
+    show wj
+    "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurine is online."
+    l "Wow, Donna is already online! Looks like I'll have some company today!"
     
+
+label onetwo:
+    $ tb_design = "quyang"
+    scene room1
+    with dissolve
+    play music "audio/bgm1ok.mp3"
+    "Note: this section is played from the perspective of Donna."
+    show mrsqu
+    dm "And now you’re playing games?"
+    dm "You got into the honors program—you should be working extra hard so you can keep up with the other kids."
+    dm "Your studies are more important than those good-for-nothing games. Don't you understand?"
+    dm "You also need to preview material and email your teacher with questions and—"
+    d "I just wanted to relax a bit… I made a new friend today."
+    "Donna’s mother, already halfway out the door, retorts with a sarcastic jab."
+    dm "A friend? With {i}your{/i} attitude, I can never imagine {i}you{/i} making any friends."
+    "She pauses briefly, her tone turning even sharper."
+    dm "It’s not a boy, is it? I knew it! I know what you kids are up to these days, especially with these games!"
+    
+
+
+
+
 
 label test:
     $ tb_design = "normal"
