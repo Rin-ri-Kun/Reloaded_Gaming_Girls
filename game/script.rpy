@@ -7,7 +7,7 @@ define d = Character("Donna")
 define a = Character("Allie")
 define k = Character("Mackenzie")
 define l = Character("Lindsey")
-define dm = Character("Donna’s Mother")
+define dm = Character("Donna’s Mom")
 
 image school = "images/school.png"
 image library = "images/library.png"
@@ -66,7 +66,7 @@ label start:
     show wj
     "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurine is online."
     l "Wow, Donna is already online! Looks like I'll have some company today!"
-    
+    jump onetwo
 
 label onetwo:
     $ tb_design = "quyang"
@@ -84,6 +84,19 @@ label onetwo:
     dm "A friend? With {i}your{/i} attitude, I can never imagine {i}you{/i} making any friends."
     "She pauses briefly, her tone turning even sharper."
     dm "It’s not a boy, is it? I knew it! I know what you kids are up to these days, especially with these games!"
+    "Donna keeps her head down, keeps her head down and stays quiet. Her fingers tighten around the edge of her shirt."
+    dm "I'm warning you, Donna. High school is for studying, not for getting caught up in nonsense! No dating. Understand?"
+    d "…It’s a girl."
+    "Donna’s face stays expressionless."
+    hide mrsqu
+    with dissolve
+    "Her mother leaves the bedroom, still grumbling to herself. As her footsteps get farther down the hall, Donna walks over to the door, shuts it, and locks it."
+    "She slips on her headphones, drowning out the noise of her mother's continued ranting in the kitchen."
+    scene game1
+    with dissolve
+    "As soon as Donna logs into the game, a friend invite pops up on her screen—it’s from Tsuchi. She hesitates for a moment before clicking “Accept.”"
+    
+
     
 
 
