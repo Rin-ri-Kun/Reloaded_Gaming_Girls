@@ -111,6 +111,33 @@ label onetwo:
     l "Yeah! You know, exploring scenic spots, posing with our characters, taking screenshots—don’t you know?"
     d "I’m solo…no one ever mentioned it to me."
     l "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
+    d "…Alright."
+    "They guide their characters to scenic spots in the game."
+    #scene gamemountain
+    "On mountain peaks, they capture the setting sun’s glow, their characters standing side by side in warm twilight."
+    #scene gamecoast
+    "By the ocean, the catgirl jumps in a playful victory pose while the elf stands with a soft smile."
+    #scene gamegrassland
+    "Finally, they sit together on a grassy hill, gazing at a starry sky. "
+    "A shooting star streaks across, carving a path through the darkness."
+    "Some say shooting stars carry wishes, each streak in the sky marking a new hope. Lindsey's eye's sparkle, fully believing the star will bring her something special."
+    "But Donna watches in silence. A shooting star is just another part of the night sky. Perhaps, she just doesn't believe in miracles anymore."
+    "Against the backdrop of the night, every sound seems especially clear."
+    "Lindsey’s lively voice carries through Donna’s headphones."
+    l "Hey, do you play any other games? Maybe we can team up more often."
+    d "This is the only one I play… I read online that it's a good place to make friends, so I downloaded it. But I never really made any friends… You’re actually the first."
+    "Lindsey hesitates, unsure of how to respond. Sympathy doesn’t seem appropriate."
+    "So, she clumsily changes the topic."
+    l "Oh, so you actually want to make friends? I bet there are plenty of people at school who like games. Have you tried talking to them?"
+    d "Some of the guys are too loud… I don’t really want to deal with them."
+    "{i}A bit of a picky princess, huh?{/i} Lindsey thinks to herself."
+    l "Why not try joining some clubs?"
+    l "You might meet people with similar interests that way."
+    d "Clubs? Are there any for gaming?"
+    l "There should be! Tomorrow’s the Club Fair. You down to come with?"
+    d "Down to…what?"
+    l "I mean…do you want to walk around with me?"
+    "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
     
 
     
