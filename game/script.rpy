@@ -94,7 +94,23 @@ label onetwo:
     "She slips on her headphones, drowning out the noise of her mother's continued ranting in the kitchen."
     scene game1
     with dissolve
+    show qy_game at left
+    with dissolve
     "As soon as Donna logs into the game, a friend invite pops up on her screen—it’s from Tsuchi. She hesitates for a moment before clicking “Accept.”"
+    show wj_game at right
+    with dissolve
+    "Donna spots a red-haired catgirl by the large teleport crystal in Ocean City."
+    "Suddenly, Lindsey’s loud voice comes through her headphones, cheerful and excited."
+    l "Hey hey! You’re finally online!"
+    d "We're on voice chat... Why are you shouting like I'm super far away?"
+    l "Ah, come on! It’s more fun this way!"
+    "On the screen, Donna’s quiet, black-haired elf stands in contrasts to Lindsey’s lively, red-haired catgirl."
+    d "So, what do you want to do? Dungeon run?"
+    l "Nah, that’s too boring. Let’s take some photos together! Come on!"
+    d "Photos?"
+    l "Yeah! You know, exploring scenic spots, posing with our characters, taking screenshots—don’t you know?"
+    d "I’m solo…no one ever mentioned it to me."
+    l "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
     
 
     
