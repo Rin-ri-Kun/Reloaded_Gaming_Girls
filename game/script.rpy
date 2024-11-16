@@ -41,7 +41,8 @@ label oneone:
 
     show wj
     with dissolve
-    l "No matter when I come by, this place is always packed. Hi, a Combo A, please!"
+    l "No matter when I come by, this place is always packed. "
+    l "Hi, a Combo A, please!"
     "Food in hand, Lindsey starts to look for a seat."
     "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
     scene cg01
@@ -166,18 +167,26 @@ label onetwo:
 
 label onethree:
     $ tb_design = "quyang"
-    scene garden
+    play music "audio/school2.mp3"
+    scene garden with dissolve
     "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
     "The loud and bustling crowd has clearly exceeded the Garden's capacity."
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
-    show wj
+    show wj at left
     with dissolve
     l "Hey—hey—Donna! Over here!"
-    "Donna's face flushes with a hint of embarrassment. She quickly walks over and gently tugs on Lindsey's sleeve."
+    show qy at right with dissolve
+    "Donna's face flushes with a hint of embarrassment. "
+    show qy:
+        linear 1 xalign 0.4
+    "She quickly walks over and gently tugs on Lindsey's sleeve."
     d "Everyone’s looking at you…"
     l "Hehe…\nSo, we’re looking for the game club, right? Let’s get started!"
     "Donna instinctively stays close behind Lindsey."
     l "Hmm…Debate Club…Modern Music Club…Cultural Exchange Club…Oh, Anime Club! That looks interesting!"
+    show qy:
+        linear 0.5 xalign 0.35
+        linear 0.5 xalign 0.4
     "Lindsey feels another tug on her sleeve."
     d "I thought we were looking for a gaming club…"
     l "Oh—right, sorry, sorry! Got a little carried away there."
@@ -197,9 +206,13 @@ label onethree:
     l "Hold up!"
     l "How many members are there in the club? What roles do people have? And what could Donna and I do if we joined?"
     "Allie’s curious expression flashed again, though she managed to keep herself cool."
+    $ renpy.music.set_pause(True, channel="music")
+    show lf:
+        linear 0.5 yalign 1.3
     a "Actually, if both of you join, we’d have four members, which would meet the minimum requirement for the club to exist."
     l "…"
     d "…"
+    $ renpy.music.set_pause(False, channel="music")
     l "So…you’re a ghost club?"
     a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
     "Donna, who had been silent until now, suddenly spoke up."
