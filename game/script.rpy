@@ -8,6 +8,7 @@ define a = Character("Allie")
 define k = Character("Mackenzie")
 define l = Character("Lindsey")
 define dm = Character("Donna’s Mom")
+define x = Character("???")
 
 image school = "images/school.png"
 image library = "images/library.png"
@@ -24,6 +25,13 @@ while True:
         "gui/textbox_[tb_design].png"
 
 label start:
+    $ tb_design = "normal"
+    scene unitedbackground
+    "Welcome to Unique Gaming Girls - Reloaded Version!"
+    "Please enjoy (this time, we promise it’s actually enjoyable!)"
+    jump oneone
+
+label oneone:
     $ tb_design = "normal"
     scene restaurant
     with dissolve
@@ -73,7 +81,7 @@ label onetwo:
     scene room1
     with dissolve
     play music "audio/bgm1ok.mp3"
-    "Note: this section is played from the perspective of Donna."
+    "Note: sections with this textbox are played from the perspective of Donna."
     show mrsqu
     dm "And now you’re playing games?"
     dm "You got into the honors program—you should be working extra hard so you can keep up with the other kids."
@@ -113,11 +121,26 @@ label onetwo:
     l "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
     d "…Alright."
     "They guide their characters to scenic spots in the game."
-    #scene gamemountain
+    scene gamemountain
+    with dissolve
+    show qy_game at left
+    with dissolve
+    show wj_game at right
+    with dissolve
     "On mountain peaks, they capture the setting sun’s glow, their characters standing side by side in warm twilight."
-    #scene gamecoast
+    scene gamecoast
+    with dissolve
+    show qy_game at left
+    with dissolve
+    show wj_game at right
+    with dissolve
     "By the ocean, the catgirl jumps in a playful victory pose while the elf stands with a soft smile."
-    #scene gamegrassland
+    scene gamegrassland
+    with dissolve
+    show qy_game at left
+    with dissolve
+    show wj_game at right
+    with dissolve
     "Finally, they sit together on a grassy hill, gazing at a starry sky. "
     "A shooting star streaks across, carving a path through the darkness."
     "Some say shooting stars carry wishes, each streak in the sky marking a new hope. Lindsey's eye's sparkle, fully believing the star will bring her something special."
@@ -139,8 +162,51 @@ label onetwo:
     l "I mean…do you want to walk around with me?"
     "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
     "She quickly typed a reply. In the chat window’s corner, Yurina sent a simple, “Sure.”"
+    jump onethree
 
+label onethree:
+    $ tb_design = "quyang"
+    scene garden
+    "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
+    "The loud and bustling crowd has clearly exceeded the Garden's capacity."
+    "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
+    show wj
+    with dissolve
+    l "Hey—hey—Donna! Over here!"
+    "Donna's face flushes with a hint of embarrassment. She quickly walks over and gently tugs on Lindsey's sleeve."
+    d "Everyone’s looking at you…"
+    l "Hehe…\nSo, we’re looking for the game club, right? Let’s get started!"
+    "Donna instinctively stays close behind Lindsey."
+    l "Hmm…Debate Club…Modern Music Club…Cultural Exchange Club…Oh, Anime Club! That looks interesting!"
+    "Lindsey feels another tug on her sleeve."
+    d "I thought we were looking for a gaming club…"
+    l "Oh—right, sorry, sorry! Got a little carried away there."
+    l "Alright, let’s see…where’s the gaming club…?"
+    d "Too loud…"
+    hide wj
+    show wj at left
+    show lf at right
+    x "Are you two looking for a gaming club? How about checking out the Game Design Club?"
+    "Donna turns toward the calling voice—Donna turns toward the calling voice. To her right, a girl sat alone at a small table, empty other than a small stack of flyers and a SUSA gaming laptop with a Triscord QR code."
+    "The lackluster scene stood out within the business of the Garden square."
+    "The girl picked up a flier and waved it casually toward the two girls."
+    l "Game Design Club? Sounds cool! Can you tell us more?"
+    "Donna noticed a flicker of a curious expression on the older girl’s face."
+    x "Sure! I’m Allie, 10th grade, and the club’s vice president. Our president, Kenzie—isn’t here today, so I’m handling recruitment."
+    a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ‘interactive art’…"
+    l "Hold up!"
+    l "How many members are there in the club? What roles do people have? And what could Donna and I do if we joined?"
+    "Allie’s curious expression flashed again, though she managed to keep herself cool."
+    a "Actually, if both of you join, we’d have four members, which would meet the minimum requirement for the club to exist."
+    l "…"
+    d "…"
+    l "So…you’re a ghost club?"
+    a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
+    "Donna, who had been silent until now, suddenly spoke up."
+    d "Um…I can write a bit."
+    l "I could handle art—oh, wait!"
     
+    return
 
 
 
