@@ -53,7 +53,7 @@ label start:
     l "Really? We are on the same server? What a coincidence! Donna, wanna add friends and play together? My ID is Tsuchi."
     "Lindsey’s face lights up with a smile."
     "Donna gapes at her, looking like her mind has drifted somewhere beyond this universe. She only snaps back to the present when Lindsey waves a hand in front of her."
-    d "Friend request sent. My ID is Yurine."
+    d "Friend request sent. My ID is Yurina."
     "Her tone remains as flat and emotionless as before."
     l "Let’s follow each other on Onstagram too! What’s your username?"
     hide wj 
@@ -64,7 +64,7 @@ label start:
     scene room2
     with dissolve
     show wj
-    "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurine is online."
+    "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurina is online."
     l "Wow, Donna is already online! Looks like I'll have some company today!"
     jump onetwo
 
@@ -138,7 +138,7 @@ label onetwo:
     d "Down to…what?"
     l "I mean…do you want to walk around with me?"
     "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
-    
+    "She quickly typed a reply. In the chat window’s corner, Yurina sent a simple, “Sure.”"
 
     
 
