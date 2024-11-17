@@ -75,6 +75,8 @@ label oneone:
     show wj
     "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurina is online."
     l "Wow, Donna is already online! Looks like I'll have some company today!"
+    scene darkness with dissolve
+    "changing sections……"
     jump onetwo
 
 label onetwo:
@@ -105,6 +107,7 @@ label onetwo:
     with dissolve
     show qy_game at left
     with dissolve
+    play music "audio/justice.mp3"
     "As soon as Donna logs into the game, a friend invite pops up on her screen—it’s from Tsuchi. She hesitates for a moment before clicking “Accept.”"
     show wj_game at right
     with dissolve
@@ -163,6 +166,8 @@ label onetwo:
     l "I mean…do you want to walk around with me?"
     "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
     "She quickly typed a reply. In the chat window’s corner, Yurina sent a simple, “Sure.”"
+    scene darkness with dissolve
+    "The next day……"
     jump onethree
 
 label onethree:
@@ -218,7 +223,6 @@ label onethree:
     "Donna, who had been silent until now, suddenly spoke up."
     d "Um…I can write a bit."
     l "I could handle art—oh, wait!"
-    
     return
 
 
