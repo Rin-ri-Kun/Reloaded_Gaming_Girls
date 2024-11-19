@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 241, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 28, in script
+    $ tb_design = null
+  File "game/script.rpy", line 28, in <module>
+    $ tb_design = null
+NameError: name 'null' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 241, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 28, in script
+    $ tb_design = null
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 28, in <module>
+    $ tb_design = null
+NameError: name 'null' is not defined
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.3.2.24090902
+Reloaded_Gaming_Girls 1.0
+Mon Nov 18 22:07:23 2024

@@ -24,6 +24,12 @@ while True:
     image textbox:
         "gui/textbox_[tb_design].png"
 
+label splashscreen:
+    $ tb_design = "none"
+    scene unitedbackground
+    with dissolve
+    " {nw}{p=2}"
+    jump start
 label start:
     $ tb_design = "normal"
     scene unitedbackground
@@ -171,9 +177,10 @@ label onetwo:
     jump onethree
 
 label onethree:
-    $ tb_design = "quyang"
+    $ tb_design = "normal"
     play music "audio/school2.mp3"
-    scene garden with dissolve
+    scene garden 
+    with dissolve
     "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
     "The loud and bustling crowd has clearly exceeded the Garden's capacity."
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
@@ -223,7 +230,65 @@ label onethree:
     "Donna, who had been silent until now, suddenly spoke up."
     d "Um…I can write a bit."
     l "I could handle art—oh, wait!"
+    "Lindsey slaps her forehead and seems to contemplate for a bit. Unexpectedly, she grabs Donna's hand and pulls her aside. Donna, surprised by the sudden physical contact, stumbles into confusion."
+    l "This club seems odd. Only two members—it’s clearly just a placeholder club! Let’s find a bigger game club instead. We don't wanna get caught up in anything weird!"
+    a "…No offense, but I can hear that."
+    "Lindsey, frozen up, blinks innocently at Allie before realizing how badly she just screwed herself over. She tries to walk away with Donna in tow. Donna can't get over how warm Lindsey's hand is."
+    "Allie sighs and calls after them."
+    a "Wait! You're not wrong, but the other game club? They just grind ranked matches non-stop. You two don’t seem like the competitive type, do you?"
+    l "Ah, yeah, I usually play MMORPGs…"
+    "Donna nods."
+    a "Oh, like UO14? Ken-ken and I play that too!"
+    l "No way! Which server?"
+    a "We’re on the Cat server…"
+    "Donna's heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
+    "Allie gives a dumbfounded stare, clearly taken aback by their reactions."
+    "I'm guessing you two are on that server, too…"
+    jump onefour
+
+label onefour:
+    $ tb_design = "normal"
+    play music "audio/bgm1ok.mp3"
+    scene game1
+    with dissolve
+    show qy_game at left
+    with dissolve
+    "That evening, Donna, as usual, slipped away from her mother’s eyes and logged into UO14."
+    "She noticed that the voice channel now had four people, and the team gathered at the grand crystal in Ocean City."
+    show wj_game at right
+    with dissolve
+    "The red-haired catgirl was bouncing around excitedly—clearly, Lindsey had invited the newcomers."
+    show lf_game
+    with dissolve
+    "Allie’s in-game character, based on her name, is called “Allyknight”."
+    hide lf_game
+    show wz_game
+    with dissolve
+    "As for the club president, Mackenzie, who hadn’t been at the fair earlier, her ID carried a hint of dramatic flair."
+    hide qy_game
+    hide wz_game
+    show wz_game at left
+    l "Wow, an elegant white-haired dragon girl with the username “The Trailblazer”… Bold choice, senpai!"
+    "Mackenzie’s gentle voice flowed through their headsets."
+    k "Actually, Allie picked that ID for me, actually. I really like it."
+    hide wj_game
+    show lf_game at right
+    a "See? It suits you, you weirdo."
+    k "Oh, and by the way! I designed Allie’s character."
+    k "Look at her—pink hair with blue highlights, just like her in real life—she’s my sweetheart, gotta mark my territory!"
+    "Mackenzie’s tone suddenly took on a playful edge, leaving it unclear whether she was referring to Allyknight or Allie herself…"
+    hide wz_game
+    show qy_game at left
+    "Breaking the awkward atmosphere, Donna quietly interjected." 
+    d "So… Are we taking photos again tonight?"
+    hide lf_game
+    show wj_game at right
+    l "Nah, we’ve got enough people for a change! Let’s try a multiplayer dungeon run!"
+    "To be continued…"
     return
+
+
+
 
 
 
