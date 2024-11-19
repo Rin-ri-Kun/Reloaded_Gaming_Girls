@@ -29,7 +29,7 @@ label splashscreen:
     scene unitedbackground
     with dissolve
     " {nw}{p=2}"
-    jump start
+    return
 label start:
     $ tb_design = "normal"
     scene unitedbackground
