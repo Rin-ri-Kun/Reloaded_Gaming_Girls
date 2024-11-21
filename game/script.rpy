@@ -15,8 +15,6 @@ image library = "images/library.png"
 image darkness = "images/darkness.png"
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
-#define quyang = Character("quyang")
-#define weijiang = Character("weijiang")
 # The game starts here.
 
 #default tb_design = "normal"
@@ -47,6 +45,7 @@ label oneone:
     show wj
     with dissolve
     l "No matter when I come by, this place is always packed. "
+    
     l "Hi, a Combo A, please!"
     "Food in hand, Lindsey starts to look for a seat."
     "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
@@ -185,6 +184,9 @@ label onethree:
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
     show wj at left
     with dissolve
+    show wj:
+        linear 0.1 yalign 0.8
+        linear 0.1 yalign 1.0
     l "Hey—hey—Donna! Over here!"
     show qy at right with dissolve
     "Donna's face flushes with a hint of embarrassment. "
@@ -247,7 +249,7 @@ label onethree:
 
 label onefour:
     $ tb_design = "normal"
-    play music "audio/bgm1ok.mp3"
+    play music "audio/justice.mp3"
     scene game1
     with dissolve
     show qy_game at left
@@ -285,11 +287,6 @@ label onefour:
     l "Nah, we’ve got enough people for a change! Let’s try a multiplayer dungeon run!"
     "To be continued…"
     return
-
-
-
-
-
 
 
 
