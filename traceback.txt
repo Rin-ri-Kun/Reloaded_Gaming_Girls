@@ -1,30 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 28, in script
-    $ tb_design = null
-  File "game/script.rpy", line 28, in <module>
-    $ tb_design = null
-NameError: name 'null' is not defined
+  File "game/script.rpy", line 111, in script
+    hide mrsqu with [moveoutleft,dissolve]
+TypeError: 'RevertableList' object is not callable
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 241, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 28, in script
-    $ tb_design = null
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 28, in <module>
-    $ tb_design = null
-NameError: name 'null' is not defined
+  File "game/script.rpy", line 111, in script
+    hide mrsqu with [moveoutleft,dissolve]
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/ast.py", line 1361, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/exports/statementexports.py", line 257, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 1578, in do_with
+    return self.interact(trans_pause=True,
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2666, in interact_core
+    trans = instantiate_transition(None, old_root, layers_root)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2575, in instantiate_transition
+    trans = self.ongoing_transition[layer](
+TypeError: 'RevertableList' object is not callable
 
-macOS-10.16-x86_64-i386-64bit x86_64
+macOS-14.1.1-arm64-arm-64bit arm64
 Ren'Py 8.3.2.24090902
 Reloaded_Gaming_Girls 1.0
-Mon Nov 18 22:07:23 2024
+Fri Nov 22 01:38:50 2024
