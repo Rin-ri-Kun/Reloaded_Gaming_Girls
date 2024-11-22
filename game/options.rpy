@@ -36,6 +36,7 @@ Music & sound: KoliQed, isday, ProfBrain,
 Programming: Seth, KoliQed,
 Translation: Kevin, 
 Testing: 
+Fort: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})
 """)
 
 
