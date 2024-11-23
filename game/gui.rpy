@@ -60,7 +60,7 @@ define gui.interface_text_color = '#ffffff'
 define gui.text_font = "Elsie-Regular.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "Elsie-Regular.ttf"
+define gui.name_text_font = "Elsie-Black.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "Elsie-Regular.ttf"
@@ -115,7 +115,7 @@ define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = 350
+define gui.namebox_width = 375
 define gui.namebox_height = None
 
 ## The borders of the box containing the character's name, in left, top, right,

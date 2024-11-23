@@ -26,10 +26,12 @@ label splashscreen:
     $ tb_design = "none"
     scene unitedbackground
     with dissolve
+    "{nw}{p=3}"
+    with dissolve
     return
 label start:
     $ tb_design = "normal"
-    scene unitedbackground
+    scene bridge
     "Welcome to Unique Gaming Girls - Reloaded Version!"
     "Please enjoy (this time, we promise it’s actually enjoyable!)"
     jump oneone
@@ -268,14 +270,13 @@ label onefour:
     with dissolve
     show qy_game at left
     with dissolve
-    "That evening, Donna, as usual, slipped away from her mother’s eyes and logged into UO14."
-    "She noticed that the voice channel now had four people, and the team gathered at the grand crystal in Ocean City."
+    "That evening, Donna, away from her mother's sight, logged into UO14."
+    "The voice channel had four people—clearly, Lindsey had invited the newcomers. The team was gathered by the Grand Crystal in Ocean City."
     show wj_game at right
     with dissolve
-    "The red-haired catgirl was bouncing around excitedly—clearly, Lindsey had invited the newcomers."
     show lf_game
     with dissolve
-    "Allie’s in-game character, based on her name, is called “Allyknight”."
+    "Allie appeared as “Allyknight” in the game."
     hide lf_game
     show wz_game
     with dissolve
@@ -283,13 +284,13 @@ label onefour:
     hide qy_game
     hide wz_game
     show wz_game at left
-    l "Wow, an elegant white-haired dragon girl with the username “The Trailblazer”… Bold choice, senpai!"
+    l "Wow, an elegant white-haired dragon girl named “The Trailblazer”… Bold choice, senpai!"
     "Mackenzie’s gentle voice flowed through their headsets."
     k "Actually, Allie picked that ID for me, actually. I really like it."
     hide wj_game
     show lf_game at right
     a "See? It suits you, you weirdo."
-    k "Oh, and by the way! I designed Allie’s character."
+    k "By the way! I designed Allie’s character."
     k "Look at her—pink hair with blue highlights, just like her in real life—she’s my sweetheart, gotta mark my territory!"
     "Mackenzie’s tone suddenly took on a playful edge, leaving it unclear whether she was referring to Allyknight or Allie herself…"
     hide wz_game
@@ -299,9 +300,118 @@ label onefour:
     hide lf_game
     show wj_game at right
     l "Nah, we’ve got enough people for a change! Let’s try a multiplayer dungeon run!"
-    "To be continued…"
+    "Tsuchi, Lindsey’s red-haired catgirl, darted toward the dungeon entrance, with the pink-haired knight following close behind."
+    hide wj_game
+    show lf_game at right
+    a "Hey, wait! We need to talk about the club!"
+    a "Last time, you all disappeared before agreeing to join!"
+    #scene new CG
+    "As the dungeon loaded, monsters appeared on the screen, and the intense battle began."
+    "The monsters launched an AoE attack right off the bat, rapidly draining the team’s health."
+    l "Oh no! Someone heal me—I’m about to die!"
+    a "Hold on! My skills are still on cooldown—just hang in there!"
+    k "Allie, don’t die on me—I still need you to write my music!"
+    "Suddenly, everyone’s health was fully restored. A quiet voice came through the headset."
+    d "…Healed."
+    l "Wow, Donna! That was amazing! You saved us!"
+    "With that clutch move, Lindsey and the other players managed to strike the boss again, the boss finally fell."
+    "With the intense battle over, the group relaxed, casually fighting small monsters as their conversation drifted."
+    scene game1
+    with dissolve
+    show wj_game
+    l "Hey, we actually worked pretty well as a team!"
+    hide wj_game
+    show lf_game
+    a "See? If we’re this in-sync in the game, it’s only natural for you to join the club!"
+    a "With you both, we can finally get our game off the ground!"
+    hide lf_game
+    show wj_game
+    l "Hmm…well, working with you guys does sound kind of fun."
+    l "Even if it’s a “ghost club,” it doesn’t really matter."
+    l "Oh, and Donna wanted to find friends with similar interests, right?"
+    hide wj_game
+    show qy_game
+    d "…Yes, I could consider it."
+    hide qy_game
+    show lf_game
+    a "Ah, don’t “consider” it!"
+    a "Both of you are perfect—you with writing, Lindsey with art. Together, we’d make an amazing team. "
+    a "Come on, I know you would make the right decision."
+    a "You don’t want to leave our club hanging as a “ghost club”, right…"
+    a "This club is gonna be wonderful, I promise!"
+    hide lf_game
+    show wz_game at right
+    show lf_game at left
+    k "I’ve already sent the club application forms to your emails!"
+    "Mackenzie’s voice remained gentle as ever. Sensing Allie’s nervousness, she softly added:"
+    k "It’s okay, Allie. Don’t worry, sweetie."
+    "Allie, unseen by the other players, let out a deep sigh of relief."
+    a "Thanks for the reminder, Ken-ken! We will certainly need the club application forms for you!"
+    hide lf_game
+    hide wz_game
+    show wj_game at left
+    show qy_game at right
+    "Lindsey and Donna give each other a look, and they seemingly finalize a decision."
+    l "Alright, alright—we’re in."
+    d "Yes."
+    l "So, since this is a game design club, what kind of game are we making?"
+    show lf_game
+    a "…Originally, we planned to make a rhythm game."
+    "Allie’s voice wavered slightly, as though still touched by Mackenzie’s reassurance. After a pause, her usual confident, teasing tone returned."
+    a "But Mackenzie’s programming skills aren’t the best…Rhythm games are a bit complex for us, so we switched to a narrative-driven game."
+    l "Narrative-driven? Like a galgame?"
+    hide qy_game
+    show wz_game at right
+    k "Isn’t that the kind of game otakus like?"
+    a "Highbrow folks call it a “visual novel” or “text adventure game”."
+    k "Basically, that’s it. When Allie and I were having our little“two-person world” in the clubroom, we thought it over~"
+    l "You two…really get along well, huh."
+    "Lindsey’s comment made the voice channel fall silent."
+    "An unspoken tension lingered in the air, and no one rushed to break it."
+    hide wj_game
+    show qy_game at left
+    "After a few seconds, Donna spoke calmly, bringing the conversation back on track."
+    d "So… Do you have a theme for the game yet?"
+    k "Hmm…oh! How about a school setting?\nTragic, angsty stories of youth are always popular~"
+    l "Ooh, sounds intense!"
+    a "Hey, don’t listen to her rambling."
+    a "The game still has to pass the teacher’s review, anything weird is going to get us sent back to the drawing board!"
+    "It was clear that, while Allie was poking fun at Mackenzie’s idea, she wasn’t exactly a fan of the “reviewing teacher” herself."
+    a "Still, a school setting could work."
+    k "We did consider writing a more serious, traditional storyline."
+    a "But creating something meaningful and deep is challenging."
+    a "We’re still just high school students… We don't have that much literary experience."
+    k "Yeah, I agree with Allie."
+    k "Building a new fictional world is too time-consuming."
+    k "Our story should probably stay closer to real life."
+    hide qy_game
+    show wj_game at left
+    l "Hey, that’s easy then!"
+    l "We can base it on our own experiences—it’ll feel more real and interesting that way!"
+    k "But my life isn’t all sunshine and rainbows."
+    k "Most of the time, it’s just me sitting in class—pretty boring."
+    k "Oh! Allie’s life should be a bit more eventful. How about letting her adapt her own experiences?"
+    a "Me? My writing skills are seriously lacking."
+    a "Besides, I’m already handling the music…"
+    a "Kenken, you’re such a terrible boss, trying to make me work double!"
+    "The pink-haired knight dropped her focus on the minor enemies and charged at the white-haired dragon girl, sword raised."
+    "Even though players attacking each other doesn’t actually reduce health, Mackenzie’s exaggerated cries filled the voice channel."
+    k "Ah! Stop, stop, that really hurts! Allie, how can you be so ruthless?!"
+    "The playful bickering between Mackenzie and Allie filled the background, mixed with Lindsey’s attempts to mediate."
+    l "Hey, quit fighting! Actually, Donna could take on the writing—she’d be great at it!"
+    hide wz_game
+    show qy_game at right
+    "Oh… yes, I could."
+    hide qy_game
+    with dissolve
+    hide lf_game
+    with dissolve
+    hide wj_game
+    with dissolve
+    "Donna didn’t pay much attention to the rest of their brainstorming."
+    "Her thoughts kept circling back to something Lindsey had said:"
+    "“Basing it on our own experiences…”"
     return
-
 
 
 label test:
