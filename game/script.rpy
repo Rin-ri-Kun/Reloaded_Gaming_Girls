@@ -53,12 +53,12 @@ label oneone:
     "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
     scene cg01
     l "Hi there! Would you mind if I sit here?"
-    "With a nod from the girl, Wei Jiang pulls out a chair and sits beside her. She takes a sip of her drink and then, always the chatty type, strikes up a conversation."
+    "With a nod from the girl, Lindsey pulls out a chair and sits beside her. She takes a sip of her drink and then, always the chatty type, strikes up a conversation."
     scene restaurant
     show wj at left
     show qy at right
     l "Your laptop looks really nice! What are you working on?"
-    "The girl turns her laptop toward Wei Jiang. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
+    "The girl turns her laptop toward Lindsey. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
     l "Wow, I play this game, too! Do you need a teammate? I'm on the cat server—maybe we could play together sometime!"
     l "Oh, sorry… I just got so excited seeing someone else playing that I forgot to introduce myself! I'm Lindsey from 9th Grade. Nice to meet you! What's your name?"
     d "Donna. I’m in 9th grade too. Same server as well."
@@ -354,7 +354,7 @@ label scene1:
     "What will Qu Yang do?"
     menu:
         "What will you do"
-        "Chat with Wei Jiang at the teaching building":
+        "Chat with Lindsey at the teaching building":
             $ weijiangfriendshippoints +=1
             jump scene2
         "Head to the lab to find Wang Ze and Ling Fan":
@@ -372,7 +372,7 @@ label scene2:
     "What will Qu Yang do?"
     menu:
         "What will you do"
-        "Chat with Wei Jiang at the teaching building":
+        "Chat with Lindsey at the teaching building":
             $ weijiangfriendshippoints +=1
             jump scene3
         "Head to the lab to find Wang Ze and Ling Fan":
@@ -388,7 +388,7 @@ label scene3:
     "What will Qu Yang do?"
     menu:
         "What will you do"
-        "Chat with Wei Jiang at the teaching building":
+        "Chat with Lindsey at the teaching building":
             $ weijiangfriendshippoints +=1
             if weijiangfriendshippoints >=2:
                 jump ending1
