@@ -1,28 +1,61 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 21, in script
-    define gui.show_name = false
-  File "game/options.rpy", line 21, in <module>
-    define gui.show_name = false
-NameError: name 'false' is not defined
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 995, in execute
+    screen history():
+  File "game/screens.rpy", line 995, in execute
+    screen history():
+  File "game/screens.rpy", line 1002, in execute
+    use game_menu1(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+TypeError: got an unexpected keyword argument 'spacing'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 21, in script
-    define gui.show_name = false
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2235, in execute
-    self.set()
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2249, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/options.rpy", line 21, in <module>
-    define gui.show_name = false
-NameError: name 'false' is not defined
+  File "renpy/common/00gamemenu.rpy", line 174, in script
+    $ ui.interact()
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 174, in <module>
+    $ ui.interact()
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/screen.py", line 480, in visit_all
+    callback(self)
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/screen.py", line 491, in per_interact
+    self.update()
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 995, in execute
+    screen history():
+  File "game/screens.rpy", line 995, in execute
+    screen history():
+  File "game/screens.rpy", line 1002, in execute
+    use game_menu1(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/parameter.py", line 384, in apply
+    raise TypeError(
+TypeError: got an unexpected keyword argument 'spacing'
 
-macOS-10.16-x86_64-i386-64bit x86_64
+macOS-14.1.1-arm64-arm-64bit arm64
 Ren'Py 8.3.2.24090902
 Reloaded_Gaming_Girls 1.0
-Sat Nov 23 21:55:01 2024
+Sun Nov 24 16:04:35 2024
