@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 201: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    at right
-            ^
+File "game/screens.rpy", line 338: The textbutton statement is not a valid child of the imagebutton statement.
+    textbutton _("End Replay") action EndReplay(confirm=True)
+              ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Nov 22 01:49:58 2024
+Sat Nov 23 23:17:10 2024

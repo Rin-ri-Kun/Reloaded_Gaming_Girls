@@ -1,30 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 111, in script
-    hide mrsqu with [moveoutleft,dissolve]
-TypeError: 'RevertableList' object is not callable
+  File "game/options.rpy", line 21, in script
+    define gui.show_name = false
+  File "game/options.rpy", line 21, in <module>
+    define gui.show_name = false
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 111, in script
-    hide mrsqu with [moveoutleft,dissolve]
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/ast.py", line 1361, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/exports/statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2666, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "/Users/robertliang/Desktop/renpy-7.5.3-sdk/renpy/display/core.py", line 2575, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: 'RevertableList' object is not callable
+  File "game/options.rpy", line 21, in script
+    define gui.show_name = false
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2235, in execute
+    self.set()
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/ast.py", line 2249, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "/Users/sethwang/Desktop/renpy-7.4.2-sdk/renpy/python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/options.rpy", line 21, in <module>
+    define gui.show_name = false
+NameError: name 'false' is not defined
 
-macOS-14.1.1-arm64-arm-64bit arm64
+macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.3.2.24090902
 Reloaded_Gaming_Girls 1.0
-Fri Nov 22 01:38:50 2024
+Sat Nov 23 21:55:01 2024
