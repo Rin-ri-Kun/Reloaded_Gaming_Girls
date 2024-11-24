@@ -360,10 +360,6 @@ screen navigation():
 
         textbutton _("Save") action ShowMenu("save")
     
-    
-
-    
-    
 
     if _in_replay:
 
@@ -529,6 +525,69 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
+screen game_menu1(title, scroll=None, yinitial=0.0):
+
+    style_prefix "game_menu"
+
+    frame:
+        style "game_menu_outer_frame"
+
+        hbox:
+
+            ## 导航部分的预留空间。
+            frame:
+                style "game_menu_navigation_frame"
+
+            frame:
+                style "game_menu_content_frame"
+
+                if scroll == "viewport":
+
+                    viewport:
+                        yinitial yinitial
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        pagekeys True
+                        vscrollbar_xpos -300
+                        vscrollbar_ypos -30
+
+                        side_yfill True
+
+                        vbox:
+                            transclude
+
+                elif scroll == "vpgrid":
+
+                    vpgrid:
+                        cols 1
+                        yinitial yinitial
+                        scrollbars "vertical"
+                        mousewheel True
+                        draggable True
+                        pagekeys True
+
+                        side_yfill True
+
+                        transclude
+
+                else:
+
+                    transclude
+
+    textbutton _("return"):
+        xalign 0.01 yalign 0.96
+        # 检测当前页面名称，如果名称不为“about”就执行特殊退出效果
+        #if renpy.get_screen("about"):
+            #action Return()
+        #else:
+            #action [Return(),With(dissolve)]
+        action Return()
+    if not main_menu:
+        textbutton _("back to main menu"):
+            xalign 0.01 yalign 0.04
+            action MainMenu()
+
 
 style game_menu_outer_frame is empty
 style game_menu_navigation_frame is empty
@@ -596,7 +655,7 @@ screen about():
     ## This use statement includes the game_menu screen inside this one. The
     ## vbox child is then included inside the viewport inside the game_menu
     ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    use game_menu1(_("About"), scroll="viewport"):
 
         style_prefix "about"
 
@@ -647,7 +706,7 @@ screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
-    use game_menu(title):
+    use game_menu1(title):
 
         fixed:
 
@@ -777,7 +836,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu1(_("Preferences"), scroll="viewport"):
 
         vbox:
 
@@ -940,7 +999,7 @@ screen history():
     ## Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
+    use game_menu1(_("History"), scroll=("vpgrid" if gui.history_height else "viewport"), yinitial=1.0, spacing=gui.history_spacing):
 
         style_prefix "history"
 
@@ -1027,7 +1086,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu1(_("Help"), scroll="viewport"):
 
         style_prefix "help"
 
