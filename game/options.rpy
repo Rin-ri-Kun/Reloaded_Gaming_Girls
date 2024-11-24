@@ -30,13 +30,13 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""This game was attend in "Yuri Game Jam".\n
-Script:
-Art:
-Music & sound: KoliQed, isday, ProfBrain, 
-Programming: Seth, KoliQed,
-Translation: Kevin, 
-Testing: 
-Fort: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})
+Script:\n
+Art:\n
+Music & sound: KoliQed, isday, ProfBrain,\n
+Programming: Seth, KoliQed,\n
+Translation: Kevin,\n
+Testing:\n
+Fort: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})\n
 """)
 
 

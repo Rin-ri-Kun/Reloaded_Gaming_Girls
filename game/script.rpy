@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define d = Character("Donna")
-define a = Character("Allie")
-define k = Character("Mackenzie")
-define l = Character("Lindsey")
+define d = Character("Donna", who_color="#CC33FF")
+define a = Character("Allie", who_color="#FF0066")
+define k = Character("Mackenzie", who_color="#7AAFFF")
+define l = Character("Lindsey", who_color="#ffc72f")
 define dm = Character("Donna’s Mom")
 define x = Character("???")
 
@@ -24,9 +24,10 @@ while True:
 
 label splashscreen:
     $ tb_design = "none"
-    scene unitedbackground
+    show unitedbackground
     with dissolve
-    "{nw}{p=3}"
+    pause 0.5
+    hide unitedbackground
     with dissolve
     return
 label start:
