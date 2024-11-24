@@ -515,7 +515,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     use navigation
 
-    textbutton _("Return"):
+    textbutton _("Return to last page"):
         style "return_button"
 
         action Return()
@@ -575,7 +575,7 @@ screen game_menu1(title, scroll=None, yinitial=0.0):
 
                     transclude
 
-    textbutton _("return"):
+    textbutton _("Return"):
         xalign 0.01 yalign 0.96
         # 检测当前页面名称，如果名称不为“about”就执行特殊退出效果
         #if renpy.get_screen("about"):
@@ -584,7 +584,7 @@ screen game_menu1(title, scroll=None, yinitial=0.0):
             #action [Return(),With(dissolve)]
         action Return()
     if not main_menu:
-        textbutton _("back to main menu"):
+        textbutton _("Main menu"):
             xalign 0.01 yalign 0.04
             action MainMenu()
 
@@ -1274,8 +1274,8 @@ screen confirm(message, yes_action, no_action):
                 xalign 0.5
                 spacing 150
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("{color=#ffffff}Yes{/color}") action yes_action
+                textbutton _("{color=#ffffff}No{/color}") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
