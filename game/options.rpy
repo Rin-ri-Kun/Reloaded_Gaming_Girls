@@ -18,7 +18,7 @@ define config.name = _("Reloaded_Gaming_Girls")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -29,14 +29,14 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""This game was attend in "Yuri Game Jam".\n
+define gui.about = _p("""This game is an attending project in the "2024 Yuri Game Jam".\n
 Script:
 Art:
-Music & sound: KoliQed, isday, ProfBrain, 
-Programming: Seth, KoliQed,
+Music & sound: KoliQed, isday, ProfBrian, 
+Programming: Juehe, KoliQed,
 Translation: Kevin, 
 Testing: 
-Fort: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})
+Font: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})
 """)
 
 

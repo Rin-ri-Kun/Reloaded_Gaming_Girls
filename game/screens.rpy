@@ -299,41 +299,83 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
+    if main_menu:
 
-            textbutton _("Start") action Start()
-
-        else:
-
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
-
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
+        imagebutton:
+            action Start()
+            #activate_sound "audio/sound_start.mp3"
+            xalign 0.846
+            yalign 0.1
+            idle "gui/Uni_Main_Button_1.png"
+            hover "gui/Uni_Main_Button_Hover_1.png"
+        imagebutton:
+            action ShowMenu("load")
+        #activate_sound "audio/sound_start.mp3"
+            xalign 0.861
+            yalign 0.26
+            idle "gui/Uni_Main_Button_2.png"
+            hover "gui/Uni_Main_Button_Hover_2.png"
+        imagebutton:
+            action ShowMenu("preferences")
+        #activate_sound "audio/sound_start.mp3"
+            xalign 0.876
+            yalign 0.42
+            idle "gui/Uni_Main_Button_3.png"
+            hover "gui/Uni_Main_Button_Hover_3.png"
+        imagebutton:
+            action ShowMenu("about")
+        #activate_sound "audio/sound_start.mp3"
+            xalign 0.891
+            yalign 0.58
+            idle "gui/Uni_Main_Button_4.png"
+            hover "gui/Uni_Main_Button_Hover_4.png"
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            imagebutton:
+                action ShowMenu("help")
+            #activate_sound "audio/sound_start.mp3"
+                xalign 0.906
+                yalign 0.74
+                idle "gui/Uni_Main_Button_5.png"
+                hover "gui/Uni_Main_Button_Hover_5.png"
+        
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton:
+                action Quit(confirm=not main_menu)
+            #activate_sound "audio/sound_start.mp3"
+                xalign 0.921
+                yalign 0.9
+                idle "gui/Uni_Main_Button_6.png"
+                hover "gui/Uni_Main_Button_Hover_6.png"
+        
 
+    else:
+
+        textbutton _("History") action ShowMenu("history")
+
+        textbutton _("Save") action ShowMenu("save")
+    
+    
+
+    
+    
+
+    if _in_replay:
+
+        textbutton _("End Replay") action EndReplay(confirm=True)
+
+    elif not main_menu:
+
+        textbutton _("Main Menu") action MainMenu()
+
+    
+
+    
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -386,8 +428,8 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame:
-    xsize 420
-    yfill True
+    xsize 0
+    yfill False
 
     background "gui/overlay/main_menu.png"
 
