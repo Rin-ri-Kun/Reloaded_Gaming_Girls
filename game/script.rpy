@@ -259,7 +259,7 @@ label onethree:
     a "We’re on the Cat server…"
     "Donna's heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
     "Allie gives a dumbfounded stare, clearly taken aback by their reactions."
-    "I'm guessing you two are on that server, too…"
+    a "I'm guessing you two are on that server, too…"
     scene darkness with dissolve
     "Later in the night……"
     jump onefour
