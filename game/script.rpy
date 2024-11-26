@@ -7,6 +7,10 @@ define d = Character("Donna", who_color="#CC33FF")
 define a = Character("Allie", who_color="#FF0066")
 define k = Character("Mackenzie", who_color="#7AAFFF")
 define l = Character("Lindsey", who_color="#ffc72f")
+define dg = Character("Yurina", who_color="#CC33FF")
+define ag = Character("Allyknight", who_color="#FF0066")
+define kg = Character("Trailblazer", who_color="#7AAFFF")
+define lg = Character("Tsuchi", who_color="#ffc72f")
 define dm = Character("Donna’s Mom")
 define x = Character("???")
 
@@ -124,17 +128,17 @@ label onetwo:
     with dissolve
     "Donna spots a red-haired catgirl by the large teleport crystal in Ocean City."
     "Suddenly, Lindsey’s loud voice comes through her headphones, cheerful and excited."
-    l "Hey hey! You’re finally online!"
-    d "We're on voice chat... Why are you shouting like I'm super far away?"
-    l "Ah, come on! It’s more fun this way!"
+    lg "Hey hey! You’re finally online!"
+    dg "We're on voice chat... Why are you shouting like I'm super far away?"
+    lg "Ah, come on! It’s more fun this way!"
     "On the screen, Donna’s quiet, black-haired elf stands in contrasts to Lindsey’s lively, red-haired catgirl."
-    d "So, what do you want to do? Dungeon run?"
-    l "Nah, that’s too boring. Let’s take some photos together! Come on!"
-    d "Photos?"
-    l "Yeah! You know, exploring scenic spots, posing with our characters, taking screenshots—don’t you know?"
-    d "I’m solo…no one ever mentioned it to me."
-    l "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
-    d "…Alright."
+    dg "So, what do you want to do? Dungeon run?"
+    lg "Nah, that’s too boring. Let’s take some photos together! Come on!"
+    dg "Photos?"
+    lg "Yeah! You know, exploring scenic spots, posing with our characters, taking screenshots—don’t you know?"
+    dg "I’m solo…no one ever mentioned it to me."
+    lg "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
+    dg "…Alright."
     "They guide their characters to scenic spots in the game."
     scene gamemountain
     with dissolve
@@ -166,19 +170,19 @@ label onetwo:
     "But Donna watches in silence. A shooting star is just another part of the night sky. Perhaps, she just doesn't believe in miracles anymore."
     "Against the backdrop of the night, every sound seems especially clear."
     "Lindsey’s lively voice carries through Donna’s headphones."
-    l "Hey, do you play any other games? Maybe we can team up more often."
-    d "This is the only one I play… I read online that it's a good place to make friends, so I downloaded it. But I never really made any friends… You’re actually the first."
+    lg "Hey, do you play any other games? Maybe we can team up more often."
+    dg "This is the only one I play… I read online that it's a good place to make friends, so I downloaded it. But I never really made any friends… You’re actually the first."
     "Lindsey hesitates, unsure of how to respond. Sympathy doesn’t seem appropriate."
     "So, she clumsily changes the topic."
-    l "Oh, so you actually want to make friends? I bet there are plenty of people at school who like games. Have you tried talking to them?"
-    d "Some of the guys are too loud… I don’t really want to deal with them."
+    lg "Oh, so you actually want to make friends? I bet there are plenty of people at school who like games. Have you tried talking to them?"
+    dg "Some of the guys are too loud… I don’t really want to deal with them."
     "{i}A bit of a picky princess, huh?{/i} Lindsey thinks to herself."
-    l "Why not try joining some clubs?"
-    l "You might meet people with similar interests that way."
-    d "Clubs? Are there any for gaming?"
-    l "There should be! Tomorrow’s the Club Fair. You down to come with?"
-    d "Down to…what?"
-    l "I mean…do you want to walk around with me?"
+    lg "Why not try joining some clubs?"
+    lg "You might meet people with similar interests that way."
+    dg "Clubs? Are there any for gaming?"
+    lg "There should be! Tomorrow’s the Club Fair. You down to come with?"
+    dg "Down to…what?"
+    lg "I mean…do you want to walk around with me?"
     "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
     "She quickly typed a reply. In the chat window’s corner, Yurina sent a simple, “Sure.”"
     scene darkness with dissolve
@@ -285,121 +289,121 @@ label onefour:
     hide qy_game
     hide wz_game
     show wz_game at left
-    l "Wow, an elegant white-haired dragon girl named “The Trailblazer”… Bold choice, senpai!"
+    lg "Wow, an elegant white-haired dragon girl named “Trailblazer”… Bold choice, senpai!"
     "Mackenzie’s gentle voice flowed through their headsets."
-    k "Actually, Allie picked that ID for me, actually. I really like it."
+    kg "Actually, Allie picked that ID for me, actually. I really like it."
     hide wj_game
     show lf_game at right
-    a "See? It suits you, you weirdo."
-    k "By the way! I designed Allie’s character."
-    k "Look at her—pink hair with blue highlights, just like her in real life—she’s my sweetheart, gotta mark my territory!"
+    ag "See? It suits you, you weirdo."
+    kg "By the way! I designed Allie’s character."
+    kg "Look at her—pink hair with blue highlights, just like her in real life—she’s my sweetheart, gotta mark my territory!"
     "Mackenzie’s tone suddenly took on a playful edge, leaving it unclear whether she was referring to Allyknight or Allie herself…"
     hide wz_game
     show qy_game at left
     "Breaking the awkward atmosphere, Donna quietly interjected." 
-    d "So… Are we taking photos again tonight?"
+    dg "So… Are we taking photos again tonight?"
     hide lf_game
     show wj_game at right
-    l "Nah, we’ve got enough people for a change! Let’s try a multiplayer dungeon run!"
+    lg "Nah, we’ve got enough people for a change! Let’s try a multiplayer dungeon run!"
     "Tsuchi, Lindsey’s red-haired catgirl, darted toward the dungeon entrance, with the pink-haired knight following close behind."
     hide wj_game
     show lf_game at right
-    a "Hey, wait! We need to talk about the club!"
-    a "Last time, you all disappeared before agreeing to join!"
+    ag "Hey, wait! We need to talk about the club!"
+    ag "Last time, you all disappeared before agreeing to join!"
     #scene new CG
     "As the dungeon loaded, monsters appeared on the screen, and the intense battle began."
     "The monsters launched an AoE attack right off the bat, rapidly draining the team’s health."
-    l "Oh no! Someone heal me—I’m about to die!"
-    a "Hold on! My skills are still on cooldown—just hang in there!"
-    k "Allie, don’t die on me—I still need you to write my music!"
+    lg "Oh no! Someone heal me—I’m about to die!"
+    ag "Hold on! My skills are still on cooldown—just hang in there!"
+    kg "Allie, don’t die on me—I still need you to write my music!"
     "Suddenly, everyone’s health was fully restored. A quiet voice came through the headset."
-    d "…Healed."
-    l "Wow, Donna! That was amazing! You saved us!"
+    dg "…Healed."
+    lg "Wow, Donna! That was amazing! You saved us!"
     "With that clutch move, Lindsey and the other players managed to strike the boss again, the boss finally fell."
     "With the intense battle over, the group relaxed, casually fighting small monsters as their conversation drifted."
     scene game1
     with dissolve
     show wj_game
-    l "Hey, we actually worked pretty well as a team!"
+    lg "Hey, we actually worked pretty well as a team!"
     hide wj_game
     show lf_game
-    a "See? If we’re this in-sync in the game, it’s only natural for you to join the club!"
-    a "With you both, we can finally get our game off the ground!"
+    ag "See? If we’re this in-sync in the game, it’s only natural for you to join the club!"
+    ag "With you both, we can finally get our game off the ground!"
     hide lf_game
     show wj_game
-    l "Hmm…well, working with you guys does sound kind of fun."
-    l "Even if it’s a “ghost club,” it doesn’t really matter."
-    l "Oh, and Donna wanted to find friends with similar interests, right?"
+    lg "Hmm…well, working with you guys does sound kind of fun."
+    lg "Even if it’s a “ghost club,” it doesn’t really matter."
+    lg "Oh, and Donna wanted to find friends with similar interests, right?"
     hide wj_game
     show qy_game
-    d "…Yes, I could consider it."
+    dg "…Yes, I could consider it."
     hide qy_game
     show lf_game
-    a "Ah, don’t “consider” it!"
-    a "Both of you are perfect—you with writing, Lindsey with art. Together, we’d make an amazing team. "
-    a "Come on, I know you would make the right decision."
-    a "You don’t want to leave our club hanging as a “ghost club”, right…"
-    a "This club is gonna be wonderful, I promise!"
+    ag "Ah, don’t “consider” it!"
+    ag "Both of you are perfect—you with writing, Lindsey with art. Together, we’d make an amazing team. "
+    ag "Come on, I know you would make the right decision."
+    ag "You don’t want to leave our club hanging as a “ghost club”, right…"
+    ag "This club is gonna be wonderful, I promise!"
     hide lf_game
     show wz_game at right
     show lf_game at left
-    k "I’ve already sent the club application forms to your emails!"
+    kg "I’ve already sent the club application forms to your emails!"
     "Mackenzie’s voice remained gentle as ever. Sensing Allie’s nervousness, she softly added:"
-    k "It’s okay, Allie. Don’t worry, sweetie."
+    kg "It’s okay, Allie. Don’t worry, sweetie."
     "Allie, unseen by the other players, let out a deep sigh of relief."
-    a "Thanks for the reminder, Ken-ken! We will certainly need the club application forms for you!"
+    ag "Thanks for the reminder, Ken-ken! We will certainly need the club application forms for you!"
     hide lf_game
     hide wz_game
     show wj_game at left
     show qy_game at right
     "Lindsey and Donna give each other a look, and they seemingly finalize a decision."
-    l "Alright, alright—we’re in."
-    d "Yes."
-    l "So, since this is a game design club, what kind of game are we making?"
+    lg "Alright, alright—we’re in."
+    dg "Yes."
+    lg "So, since this is a game design club, what kind of game are we making?"
     show lf_game
-    a "…Originally, we planned to make a rhythm game."
+    ag "…Originally, we planned to make a rhythm game."
     "Allie’s voice wavered slightly, as though still touched by Mackenzie’s reassurance. After a pause, her usual confident, teasing tone returned."
-    a "But Mackenzie’s programming skills aren’t the best…Rhythm games are a bit complex for us, so we switched to a narrative-driven game."
-    l "Narrative-driven? Like a galgame?"
+    ag "But Mackenzie’s programming skills aren’t the best…Rhythm games are a bit complex for us, so we switched to a narrative-driven game."
+    lg "Narrative-driven? Like a galgame?"
     hide qy_game
     show wz_game at right
-    k "Isn’t that the kind of game otakus like?"
-    a "Highbrow folks call it a “visual novel” or “text adventure game”."
-    k "Basically, that’s it. When Allie and I were having our little“two-person world” in the clubroom, we thought it over~"
-    l "You two…really get along well, huh."
+    kg "Isn’t that the kind of game otakus like?"
+    ag "Highbrow folks call it a “visual novel” or “text adventure game”."
+    kg "Basically, that’s it. When Allie and I were having our little“two-person world” in the clubroom, we thought it over~"
+    lg "You two…really get along well, huh."
     "Lindsey’s comment made the voice channel fall silent."
     "An unspoken tension lingered in the air, and no one rushed to break it."
     hide wj_game
     show qy_game at left
     "After a few seconds, Donna spoke calmly, bringing the conversation back on track."
-    d "So… Do you have a theme for the game yet?"
-    k "Hmm…oh! How about a school setting?\nTragic, angsty stories of youth are always popular~"
-    l "Ooh, sounds intense!"
-    a "Hey, don’t listen to her rambling."
-    a "The game still has to pass the teacher’s review, anything weird is going to get us sent back to the drawing board!"
+    dg "So… Do you have a theme for the game yet?"
+    kg "Hmm…oh! How about a school setting?\nTragic, angsty stories of youth are always popular~"
+    lg "Ooh, sounds intense!"
+    ag "Hey, don’t listen to her rambling."
+    ag "The game still has to pass the teacher’s review, anything weird is going to get us sent back to the drawing board!"
     "It was clear that, while Allie was poking fun at Mackenzie’s idea, she wasn’t exactly a fan of the “reviewing teacher” herself."
-    a "Still, a school setting could work."
-    k "We did consider writing a more serious, traditional storyline."
-    a "But creating something meaningful and deep is challenging."
-    a "We’re still just high school students… We don't have that much literary experience."
-    k "Yeah, I agree with Allie."
-    k "Building a new fictional world is too time-consuming."
-    k "Our story should probably stay closer to real life."
+    ag "Still, a school setting could work."
+    kg "We did consider writing a more serious, traditional storyline."
+    ag "But creating something meaningful and deep is challenging."
+    ag "We’re still just high school students… We don't have that much literary experience."
+    kg "Yeah, I agree with Allie."
+    kg "Building a new fictional world is too time-consuming."
+    kg "Our story should probably stay closer to real life."
     hide qy_game
     show wj_game at left
-    l "Hey, that’s easy then!"
-    l "We can base it on our own experiences—it’ll feel more real and interesting that way!"
-    k "But my life isn’t all sunshine and rainbows."
-    k "Most of the time, it’s just me sitting in class—pretty boring."
-    k "Oh! Allie’s life should be a bit more eventful. How about letting her adapt her own experiences?"
-    a "Me? My writing skills are seriously lacking."
-    a "Besides, I’m already handling the music…"
-    a "Kenken, you’re such a terrible boss, trying to make me work double!"
+    lg "Hey, that’s easy then!"
+    lg "We can base it on our own experiences—it’ll feel more real and interesting that way!"
+    kg "But my life isn’t all sunshine and rainbows."
+    kg "Most of the time, it’s just me sitting in class—pretty boring."
+    kg "Oh! Allie’s life should be a bit more eventful. How about letting her adapt her own experiences?"
+    ag "Me? My writing skills are seriously lacking."
+    ag "Besides, I’m already handling the music…"
+    ag "Kenken, you’re such a terrible boss, trying to make me work double!"
     "The pink-haired knight dropped her focus on the minor enemies and charged at the white-haired dragon girl, sword raised."
     "Even though players attacking each other doesn’t actually reduce health, Mackenzie’s exaggerated cries filled the voice channel."
-    k "Ah! Stop, stop, that really hurts! Allie, how can you be so ruthless?!"
+    kg "Ah! Stop, stop, that really hurts! Allie, how can you be so ruthless?!"
     "The playful bickering between Mackenzie and Allie filled the background, mixed with Lindsey’s attempts to mediate."
-    l "Hey, quit fighting! Actually, Donna could take on the writing—she’d be great at it!"
+    lg "Hey, quit fighting! Actually, Donna could take on the writing—she’d be great at it!"
     hide wz_game
     show qy_game at right
     "Oh… yes, I could."
