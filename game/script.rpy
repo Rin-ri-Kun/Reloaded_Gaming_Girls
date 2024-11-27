@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define d = Character("Donna", who_color="#CC33FF")
-define a = Character("Allie", who_color="#FF0066")
-define k = Character("Mackenzie", who_color="#7AAFFF")
-define l = Character("Lindsey", who_color="#ffc72f")
+define d = Character("Donna", who_color="#CC33FF")#区洋
+define a = Character("Allie", who_color="#FF0066")#凌凡
+define k = Character("Mackenzie", who_color="#7AAFFF")#汪泽
+define l = Character("Lindsey", who_color="#ffc72f")#魏江
 define dg = Character("Yurina", who_color="#CC33FF")
 define ag = Character("Allyknight", who_color="#FF0066")
 define kg = Character("Trailblazer", who_color="#7AAFFF")
