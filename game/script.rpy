@@ -49,10 +49,11 @@ label oneone:
     "A Certain Fast Food Restaurant just north to the Canaryville High School is quite an interesting place. Of course it is—anything connected to the prestigious Canaryville High School has to be interesting."
     "And now, our remarkable story is about to begin…"
 
-    show wj
+    show lindsey_neutral
     with dissolve
     l "No matter when I come by, this place is always packed. "
-    show wj:#跳跃动画
+    #hide lindsey_neutral
+    show lindsey_neutral:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Hi, a Combo A, please!"
@@ -62,8 +63,8 @@ label oneone:
     l "Hi there! Would you mind if I sit here?"
     "With a nod from the girl, Lindsey pulls out a chair and sits beside her. She takes a sip of her drink and then, always the chatty type, strikes up a conversation."
     scene restaurant
-    show wj at left
-    show qy at right
+    show lindsey_neutral at left
+    show donna_neutral at right
     l "Your laptop looks really nice! What are you working on?"
     "The girl turns her laptop toward Lindsey. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
     l "Wow, I play this game, too! Do you need a teammate? I'm on the cat server—maybe we could play together sometime!"
@@ -78,16 +79,16 @@ label oneone:
     d "Friend request sent. My ID is Yurina."
     "Her tone remains as flat and emotionless as before."
     l "Let’s follow each other on Onstagram too! What’s your username?"
-    hide wj 
+    hide lindsey_neutral 
     with dissolve
-    hide qy
+    hide donna_neutral
     with dissolve
     "After exchanging contact info, the two leave the restaurant in their own directions."
     scene room2
     with dissolve
-    show wj
+    show lindsey_neutral
     "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurina is online."
-    show wj:#跳跃动画
+    show lindsey_neutral:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Wow, Donna is already online! Looks like I'll have some company today!"
@@ -197,25 +198,25 @@ label onethree:
     "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
     "The loud and bustling crowd has clearly exceeded the Garden's capacity."
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
-    show wj at left
+    show lindsey_neutral at left
     with dissolve
-    show wj:#跳跃动画
+    show lindsey_neutral:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Hey—hey—Donna! Over here!"
-    show qy:
+    show donna_neutral:
         zoom 0.8
         yalign 1.0
         xalign 1.0
     "Donna's face flushes with a hint of embarrassment. "
-    show qy:
+    show donna_neutral:
         linear 1 xalign 0.4 zoom 1
     "She quickly walks over and gently tugs on Lindsey's sleeve."
     d "Everyone’s looking at you…"
     l "Hehe…\nSo, we’re looking for the game club, right? Let’s get started!"
     "Donna instinctively stays close behind Lindsey."
     l "Hmm…Debate Club…Modern Music Club…Cultural Exchange Club…Oh, Anime Club! That looks interesting!"
-    show qy:
+    show donna_neutral:
         linear 0.5 xalign 0.35
         linear 0.5 xalign 0.4
     "Lindsey feels another tug on her sleeve."
@@ -223,9 +224,9 @@ label onethree:
     l "Oh—right, sorry, sorry! Got a little carried away there."
     l "Alright, let’s see…where’s the gaming club…?"
     d "Too loud…"
-    hide wj
-    show wj at left
-    show lf at right
+    hide lindsey_neutral
+    show lindsey_neutral at left
+    show allie_neutral at right
     x "Are you two looking for a gaming club? How about checking out the Game Design Club?"
     "Donna turns toward the calling voice—Donna turns toward the calling voice. To her right, a girl sat alone at a small table, empty other than a small stack of flyers and a SUSA gaming laptop with a Triscord QR code."
     "The lackluster scene stood out within the business of the Garden square."
@@ -238,14 +239,14 @@ label onethree:
     l "How many members are there in the club? What roles do people have? And what could Donna and I do if we joined?"
     "Allie’s curious expression flashed again, though she managed to keep herself cool."
     $ renpy.music.set_pause(True, channel="music")
-    show lf:
+    show allie_neutral:
         linear 0.5 yalign 1.3
     a "Actually, if both of you join, we’d have four members, which would meet the minimum requirement for the club to exist."
     l "…"
     d "…"
     $ renpy.music.set_pause(False, channel="music")
     l "So…you’re a ghost club?"
-    show lf at right
+    show allie_neutral at right
     a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
     "Donna, who had been silent until now, suddenly spoke up."
     d "Um…I can write a bit."
