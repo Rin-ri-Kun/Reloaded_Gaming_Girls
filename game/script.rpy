@@ -14,9 +14,7 @@ define lg = Character("Tsuchi", who_color="#ffc72f")
 define dm = Character("Donna’s Mom")
 define x = Character("???")
 
-image school = "images/school.png"
-image library = "images/library.png"
-image darkness = "images/darkness.png"
+
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
 # The game starts here.
