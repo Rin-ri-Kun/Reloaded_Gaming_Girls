@@ -93,6 +93,7 @@ label splashscreen:
     return
 label start:
     $ tb_design = "normal"
+    stop music
     scene bridge
     "Welcome to Unique Gaming Girls - Reloaded Version!\nUse your mouse to click through the story and make choices when needed."
     "Note: This game is set in a fictional school setting, combining elements from different countries."
