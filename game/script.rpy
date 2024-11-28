@@ -168,7 +168,7 @@ label onetwo:
     $ tb_design = "quyang"
     scene room1
     with dissolve
-    play music "audio/bgm1ok.mp3"
+    play music "<loop 4.32>audio/bgm1ok.mp3"
     "Note: sections with this textbox are played from the perspective of Donna."
     show mrsqu
     dm "And now you’re playing games?"
