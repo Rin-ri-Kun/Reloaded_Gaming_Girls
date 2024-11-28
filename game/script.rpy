@@ -315,7 +315,7 @@ label onethree:
     hide allie_neutral
     show allie_happy at right
     x "Sure! I’m Allie, 10th grade, and the club’s vice president. Our president, Kenzie—isn’t here today, so I’m handling recruitment."
-    a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ‘interactive art’…"
+    a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ‘interactive media’…"
     hide lindsey_neutral
     show lindsey_angry at left
     l "Hold up!"
@@ -438,6 +438,7 @@ label onefour:
     "With that clutch move, Lindsey and the other players managed to strike the boss again, the boss finally fell."
     "With the intense battle over, the group relaxed, casually fighting small monsters as their conversation drifted."
     scene game1
+    play music "audio/school2.mp3"
     with dissolve
     show wj_game
     lg "Hey, we actually worked pretty well as a team!"
