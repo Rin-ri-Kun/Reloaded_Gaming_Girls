@@ -87,15 +87,17 @@ label splashscreen:
     $ tb_design = "none"
     show unitedbackground
     with dissolve
-    pause 0.5
+    pause 1
     hide unitedbackground
     with dissolve
     return
 label start:
     $ tb_design = "normal"
     scene bridge
-    "Welcome to Unique Gaming Girls - Reloaded Version!"
-    "Please enjoy (this time, we promise it’s actually enjoyable!)"
+    "Welcome to Unique Gaming Girls - Reloaded Version!\nUse your mouse to click through the story and make choices when needed."
+    "Note: This game is set in a fictional school setting, combining elements from different countries."
+    "Note: This game is a project submitted for Yuri Game Jam 2024."
+    "Please enjoy. (this time, we promise it’s actually enjoyable!)"
     jump oneone
 
 label oneone:
@@ -114,9 +116,11 @@ label oneone:
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Hi, a Combo A, please!"
+    hide lindsey_neutral
+    show lindsey_happy
     "Food in hand, Lindsey starts to look for a seat."
-    "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
     scene cg01
+    "She notices a quiet girl in the corner in the same red-and-white school uniform, working on her laptop."
     l "Hi there! Would you mind if I sit here?"
     "With a nod from the girl, Lindsey pulls out a chair and sits beside her. She takes a sip of her drink and then, always the chatty type, strikes up a conversation."
     scene restaurant
@@ -124,9 +128,15 @@ label oneone:
     show donna_neutral at right
     l "Your laptop looks really nice! What are you working on?"
     "The girl turns her laptop toward Lindsey. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
+    hide lindsey_neutral
+    show lindsey_happy at left
     l "Wow, I play this game, too! Do you need a teammate? I'm on the cat server—maybe we could play together sometime!"
+    hide lindsey_happy
+    show lindsey_sad at left
     l "Oh, sorry… I just got so excited seeing someone else playing that I forgot to introduce myself! I'm Lindsey from 9th Grade. Nice to meet you! What's your name?"
     d "Donna. I’m in 9th grade too. Same server as well."
+    hide lindsey_sad
+    show lindsey_neutral at left
     "Donna speaks in a calm, steady tone, almost devoid of emotion. But something else catches Lindsey's eye: a few thick notebooks are spread out beside Donna's laptop, their open pages densely packed with formulas and diagrams."
     "These must be advanced—no, honor-level materials!"
     "{i}So even top students play games like this?{/i} Lindsey wonders. But she quickly snaps back to reality."
@@ -143,14 +153,14 @@ label oneone:
     "After exchanging contact info, the two leave the restaurant in their own directions."
     scene room2
     with dissolve
-    show lindsey_neutral
+    show lindsey_happy
     "In the evening, Lindsey returns home and logs into the game. The familiar screen lights up, and just as she’s about to start, a familiar ID pops up in her friend list—Yurina is online."
-    show lindsey_neutral:#跳跃动画
+    show lindsey_happy:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Wow, Donna is already online! Looks like I'll have some company today!"
     scene darkness with dissolve
-    "changing sections……"
+    "Meanwhile……"
     jump onetwo
 
 label onetwo:
@@ -255,24 +265,30 @@ label onethree:
     "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
     "The loud and bustling crowd has clearly exceeded the Garden's capacity."
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
-    show lindsey_neutral at left
+    show lindsey_happy at left
     with dissolve
-    show lindsey_neutral:#跳跃动画
+    show lindsey_happy:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
     l "Hey—hey—Donna! Over here!"
-    show donna_neutral:
+    show donna_sad:
         zoom 0.8
         yalign 1.0
         xalign 1.0
     "Donna's face flushes with a hint of embarrassment. "
-    show donna_neutral:
+    show donna_sad:
         linear 1 xalign 0.4 zoom 1
     "She quickly walks over and gently tugs on Lindsey's sleeve."
     d "Everyone’s looking at you…"
+    hide lindsey_happy
+    show lindsey_neutral at left
     l "Hehe…\nSo, we’re looking for the game club, right? Let’s get started!"
     "Donna instinctively stays close behind Lindsey."
     l "Hmm…Debate Club…Modern Music Club…Cultural Exchange Club…Oh, Anime Club! That looks interesting!"
+    hide donna_sad
+    show donna_neutral:
+        xalign 0.4
+        yalign 1.0
     show donna_neutral:
         linear 0.5 xalign 0.35
         linear 0.5 xalign 0.4
@@ -289,11 +305,25 @@ label onethree:
     "The lackluster scene stood out within the business of the Garden square."
     "The girl picked up a flier and waved it casually toward the two girls."
     l "Game Design Club? Sounds cool! Can you tell us more?"
+    hide allie_neutral
+    show allie_sad at right
+    pause 0.5
+    hide allie_sad
+    show allie_neutral at right
     "Donna noticed a flicker of a curious expression on the older girl’s face."
+    hide allie_neutral
+    show allie_happy at right
     x "Sure! I’m Allie, 10th grade, and the club’s vice president. Our president, Kenzie—isn’t here today, so I’m handling recruitment."
     a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ‘interactive art’…"
+    hide lindsey_neutral
+    show lindsey_angry at left
     l "Hold up!"
     l "How many members are there in the club? What roles do people have? And what could Donna and I do if we joined?"
+    hide allie_happy
+    show allie_sad at right
+    pause 0.5
+    hide allie_sad
+    show allie_neutral at right
     "Allie’s curious expression flashed again, though she managed to keep herself cool."
     $ renpy.music.set_pause(True, channel="music")
     show allie_neutral:
@@ -302,23 +332,50 @@ label onethree:
     l "…"
     d "…"
     $ renpy.music.set_pause(False, channel="music")
+    hide lindsey_angry
+    show lindsey_afraid at left
+    hide donna_neutral
+    show donna_afraid:
+        xalign 0.4
+        yalign 1.0
     l "So…you’re a ghost club?"
-    show allie_neutral at right
+    hide allie_neutral
+    show allie_sad at right
     a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
+    hide donna_afraid
+    show donna_neutral:
+        xalign 0.4
+        yalign 1.0
+    hide lindsey_afraid
+    show lindsey_neutral at left
     "Donna, who had been silent until now, suddenly spoke up."
     d "Um…I can write a bit."
     l "I could handle art—oh, wait!"
+    hide lindsey_neutral
+    show lindsey_angry at left
     "Lindsey slaps her forehead and seems to contemplate for a bit. Unexpectedly, she grabs Donna's hand and pulls her aside. Donna, surprised by the sudden physical contact, stumbles into confusion."
+    hide allie_sad
+    show allie_angry at right
     l "This club seems odd. Only two members—it’s clearly just a placeholder club! Let’s find a bigger game club instead. We don't wanna get caught up in anything weird!"
     a "…No offense, but I can hear that."
+    hide lindsey_angry
+    show lindsey_afraid at left
     "Lindsey, frozen up, blinks innocently at Allie before realizing how badly she just screwed herself over. She tries to walk away with Donna in tow. Donna can't get over how warm Lindsey's hand is."
     "Allie sighs and calls after them."
     a "Wait! You're not wrong, but the other game club? They just grind ranked matches non-stop. You two don’t seem like the competitive type, do you?"
+    hide lindsey_afraid
+    show lindsey_neutral at left
     l "Ah, yeah, I usually play MMORPGs…"
     "Donna nods."
+    hide allie_angry
+    show allie_neutral at right
     a "Oh, like UO14? Ken-ken and I play that too!"
     l "No way! Which server?"
     a "We’re on the Cat server…"
+    hide donna_neutral
+    show donna_happy:
+        xalign 0.4
+        yalign 1.0
     "Donna's heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
     "Allie gives a dumbfounded stare, clearly taken aback by their reactions."
     a "I'm guessing you two are on that server, too…"
