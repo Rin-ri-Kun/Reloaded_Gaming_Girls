@@ -2,7 +2,6 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-
 define d = Character("Donna", who_color="#CC33FF")#区洋
 define a = Character("Allie", who_color="#FF0066")#凌凡
 define k = Character("Mackenzie", who_color="#7AAFFF")#汪泽
@@ -24,6 +23,66 @@ while True:
     image textbox:
         "gui/textbox_[tb_design].png"
 
+image Lindsey_neutral:
+    "images/Lindsey_neutral.PNG"
+    zoom 0.4
+image Donna_neutral:
+    "images/Donna_neutral.PNG"
+    zoom 0.4
+image Mackenzie_neutral:
+    "images/Mackenzie_neutral.PNG"
+    zoom 0.4
+image Allie_neutral:
+    "images/Allie_neutral.PNG"
+    zoom 0.4
+image Lindsey_angry:
+    "images/Lindsey_angry.PNG"
+    zoom 0.4
+image Donna_angry:
+    "images/Donna_angry.PNG"
+    zoom 0.4
+image Mackenzie_angry:
+    "images/Mackenzie_angry.PNG"
+    zoom 0.4
+image Allie_angry:
+    "images/Allie_angry.PNG"
+    zoom 0.4
+image Lindsey_afraid:
+    "images/Lindsey_afraid.PNG"
+    zoom 0.4
+image Donna_afraid:
+    "images/Donna_afraid.PNG"
+    zoom 0.4
+image Mackenzie_afraid:
+    "images/Mackenzie_afraid.PNG"
+    zoom 0.4
+image Allie_afraid:
+    "images/Allie_afraid.PNG"
+    zoom 0.4
+image Lindsey_sad:
+    "images/Lindsey_sad.PNG"
+    zoom 0.4
+image Donna_sad:
+    "images/Donna_sad.PNG"
+    zoom 0.4
+image Mackenzie_sad:
+    "images/Mackenzie_sad.PNG"
+    zoom 0.4
+image Allie_sad:
+    "images/Allie_sad.PNG"
+    zoom 0.4
+image Lindsey_happy:
+    "images/Lindsey_happy.PNG"
+    zoom 0.4
+image Donna_happy:
+    "images/Donna_happy.PNG"
+    zoom 0.4
+image Mackenzie_happy:
+    "images/Mackenzie_happy.PNG"
+    zoom 0.4
+image Allie_happy:
+    "images/Allie_happy.PNG"
+    zoom 0.4
 label splashscreen:
     $ tb_design = "none"
     show unitedbackground
