@@ -11,11 +11,14 @@ define ag = Character("Allyknight", who_color="#FF0066")
 define kg = Character("Trailblazer", who_color="#7AAFFF")
 define lg = Character("Tsuchi", who_color="#ffc72f")
 define dm = Character("Donna’s Mom")
+define ca = Character("Classmate A")
+define cb = Character("Classmate B")
 define x = Character("???")
 
 
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
+define add1 = False
 # The game starts here.
 
 #default tb_design = "normal"
@@ -95,7 +98,7 @@ label start:
     $ tb_design = "normal"
     stop music
     scene bridge
-    "Welcome to Unique Gaming Girls - Reloaded Version!\nUse your mouse to click through the story and make choices when needed."
+    "Welcome to Unique Gaming Girls - Reloaded Edition!\nUse your mouse to click through the story and make choices when needed."
     "Note: This game is set in a fictional school setting, combining elements from different countries."
     "Note: This game is a project submitted for Yuri Game Jam 2024."
     "Please enjoy. (this time, we promise it’s actually enjoyable!)"
@@ -131,14 +134,14 @@ label oneone:
     "The girl turns her laptop toward Lindsey. It’s a screen that looks familiar—it’s the MMORPG she’s been playing: UO14."
     hide lindsey_neutral
     show lindsey_happy at left
-    l "Wow, I play this game, too! Do you need a teammate? I'm on the cat server—maybe we could play together sometime!"
+    l "Wow, I play this game, too! Do you need a teammate? I’m on the cat server—maybe we could play together sometime!"
     hide lindsey_happy
     show lindsey_sad at left
-    l "Oh, sorry… I just got so excited seeing someone else playing that I forgot to introduce myself! I'm Lindsey from 9th Grade. Nice to meet you! What's your name?"
+    l "Oh, sorry… I just got so excited seeing someone else playing that I forgot to introduce myself! I’m Lindsey from 9th Grade. Nice to meet you! What’s your name?"
     d "Donna. I’m in 9th grade too. Same server as well."
     hide lindsey_sad
     show lindsey_neutral at left
-    "Donna speaks in a calm, steady tone, almost devoid of emotion. But something else catches Lindsey's eye: a few thick notebooks are spread out beside Donna's laptop, their open pages densely packed with formulas and diagrams."
+    "Donna speaks in a calm, steady tone, almost devoid of emotion. But something else catches Lindsey’s eye: a few thick notebooks are spread out beside Donna’s laptop, their open pages densely packed with formulas and diagrams."
     "These must be advanced—no, honor-level materials!"
     "{i}So even top students play games like this?{/i} Lindsey wonders. But she quickly snaps back to reality."
     l "Really? We are on the same server? What a coincidence! Donna, wanna add friends and play together? My ID is Tsuchi."
@@ -159,7 +162,7 @@ label oneone:
     show lindsey_happy:#跳跃动画
         linear 0.1 yalign 0.8
         linear 0.1 yalign 1.0
-    l "Wow, Donna is already online! Looks like I'll have some company today!"
+    l "Wow, Donna is already online! Looks like I’ll have some company today!"
     scene darkness with dissolve
     "Meanwhile……"
     jump onetwo
@@ -173,7 +176,7 @@ label onetwo:
     show mrsqu
     dm "And now you’re playing games?"
     dm "You got into the honors program—you should be working extra hard so you can keep up with the other kids."
-    dm "Your studies are more important than those good-for-nothing games. Don't you understand?"
+    dm "Your studies are more important than those good-for-nothing games. Don’t you understand?"
     dm "You also need to preview material and email your teacher with questions and—"
     d "I just wanted to relax a bit… I made a new friend today."
     "Donna’s mother, already halfway out the door, retorts with a sarcastic jab."
@@ -181,12 +184,12 @@ label onetwo:
     "She pauses briefly, her tone turning even sharper."
     dm "It’s not a boy, is it? I knew it! I know what you kids are up to these days, especially with these games!"
     "Donna keeps her head down, keeps her head down and stays quiet. Her fingers tighten around the edge of her shirt."
-    dm "I'm warning you, Donna. High school is for studying, not for getting caught up in nonsense! No dating. Understand?"
+    dm "I’m warning you, Donna. High school is for studying, not for getting caught up in nonsense! No dating. Understand?"
     d "…It’s a girl."
     "Donna’s face stays expressionless."
     hide mrsqu with moveoutleft
     "Her mother leaves the bedroom, still grumbling to herself. As her footsteps get farther down the hall, Donna walks over to the door, shuts it, and locks it."
-    "She slips on her headphones, drowning out the noise of her mother's continued ranting in the kitchen."
+    "She slips on her headphones, drowning out the noise of her mother’s continued ranting in the kitchen."
     scene game1
     with dissolve
     show qy_game at left
@@ -198,7 +201,7 @@ label onetwo:
     "Donna spots a red-haired catgirl by the large teleport crystal in Ocean City."
     "Suddenly, Lindsey’s loud voice comes through her headphones, cheerful and excited."
     lg "Hey hey! You’re finally online!"
-    dg "We're on voice chat... Why are you shouting like I'm super far away?"
+    dg "We’re on voice chat… Why are you shouting like I’m super far away?"
     lg "Ah, come on! It’s more fun this way!"
     "On the screen, Donna’s quiet, black-haired elf stands in contrasts to Lindsey’s lively, red-haired catgirl."
     dg "So, what do you want to do? Dungeon run?"
@@ -235,12 +238,12 @@ label onetwo:
     with moveinleft
     "Finally, they sit together on a grassy hill, gazing at a starry sky. "
     "A shooting star streaks across, carving a path through the darkness."
-    "Some say shooting stars carry wishes, each streak in the sky marking a new hope. Lindsey's eye's sparkle, fully believing the star will bring her something special."
-    "But Donna watches in silence. A shooting star is just another part of the night sky. Perhaps, she just doesn't believe in miracles anymore."
+    "Some say shooting stars carry wishes, each streak in the sky marking a new hope. Lindsey’s eye’s sparkle, fully believing the star will bring her something special."
+    "But Donna watches in silence. A shooting star is just another part of the night sky. Perhaps, she just doesn’t believe in miracles anymore."
     "Against the backdrop of the night, every sound seems especially clear."
     "Lindsey’s lively voice carries through Donna’s headphones."
     lg "Hey, do you play any other games? Maybe we can team up more often."
-    dg "This is the only one I play… I read online that it's a good place to make friends, so I downloaded it. But I never really made any friends… You’re actually the first."
+    dg "This is the only one I play… I read online that it’s a good place to make friends, so I downloaded it. But I never really made any friends… You’re actually the first."
     "Lindsey hesitates, unsure of how to respond. Sympathy doesn’t seem appropriate."
     "So, she clumsily changes the topic."
     lg "Oh, so you actually want to make friends? I bet there are plenty of people at school who like games. Have you tried talking to them?"
@@ -264,7 +267,7 @@ label onethree:
     scene garden 
     with dissolve
     "It’s 12:25, and the Central Garden is packed with students at the Club Fair."
-    "The loud and bustling crowd has clearly exceeded the Garden's capacity."
+    "The loud and bustling crowd has clearly exceeded the Garden’s capacity."
     "Donna walks out onto campus, fresh out of class, and hears someone calling her name from a distance."
     show lindsey_happy at left
     with dissolve
@@ -276,10 +279,10 @@ label onethree:
         zoom 0.8
         yalign 1.0
         xalign 1.0
-    "Donna's face flushes with a hint of embarrassment. "
+    "Donna’s face flushes with a hint of embarrassment. "
     show donna_sad:
         linear 1 xalign 0.4 zoom 1
-    "She quickly walks over and gently tugs on Lindsey's sleeve."
+    "She quickly walks over and gently tugs on Lindsey’s sleeve."
     d "Everyone’s looking at you…"
     hide lindsey_happy
     show lindsey_neutral at left
@@ -315,7 +318,7 @@ label onethree:
     hide allie_neutral
     show allie_happy at right
     x "Sure! I’m Allie, 10th grade, and the club’s vice president. Our president, Kenzie—isn’t here today, so I’m handling recruitment."
-    a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ‘interactive media’…"
+    a "As the name suggests, we focus on creating games. Everyone in the club is a game enthusiast, and we treat it as a kind of ’interactive media’…"
     hide lindsey_neutral
     show lindsey_angry at left
     l "Hold up!"
@@ -354,16 +357,16 @@ label onethree:
     l "I could handle art—oh, wait!"
     hide lindsey_neutral
     show lindsey_angry at left
-    "Lindsey slaps her forehead and seems to contemplate for a bit. Unexpectedly, she grabs Donna's hand and pulls her aside. Donna, surprised by the sudden physical contact, stumbles into confusion."
+    "Lindsey slaps her forehead and seems to contemplate for a bit. Unexpectedly, she grabs Donna’s hand and pulls her aside. Donna, surprised by the sudden physical contact, stumbles into confusion."
     hide allie_sad
     show allie_angry at right
-    l "This club seems odd. Only two members—it’s clearly just a placeholder club! Let’s find a bigger game club instead. We don't wanna get caught up in anything weird!"
+    l "This club seems odd. Only two members—it’s clearly just a placeholder club! Let’s find a bigger game club instead. We don’t wanna get caught up in anything weird!"
     a "…No offense, but I can hear that."
     hide lindsey_angry
     show lindsey_afraid at left
-    "Lindsey, frozen up, blinks innocently at Allie before realizing how badly she just screwed herself over. She tries to walk away with Donna in tow. Donna can't get over how warm Lindsey's hand is."
+    "Lindsey, frozen up, blinks innocently at Allie before realizing how badly she just screwed herself over. She tries to walk away with Donna in tow. Donna can’t get over how warm Lindsey’s hand is."
     "Allie sighs and calls after them."
-    a "Wait! You're not wrong, but the other game club? They just grind ranked matches non-stop. You two don’t seem like the competitive type, do you?"
+    a "Wait! You’re not wrong, but the other game club? They just grind ranked matches non-stop. You two don’t seem like the competitive type, do you?"
     hide lindsey_afraid
     show lindsey_neutral at left
     l "Ah, yeah, I usually play MMORPGs…"
@@ -377,9 +380,9 @@ label onethree:
     show donna_happy:
         xalign 0.4
         yalign 1.0
-    "Donna's heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
+    "Donna’s heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
     "Allie gives a dumbfounded stare, clearly taken aback by their reactions."
-    a "I'm guessing you two are on that server, too…"
+    a "I’m guessing you two are on that server, too…"
     scene darkness with dissolve
     "Later in the night……"
     jump onefour
@@ -391,7 +394,7 @@ label onefour:
     with dissolve
     show qy_game at left
     with dissolve
-    "That evening, Donna, away from her mother's sight, logged into UO14."
+    "That evening, Donna, away from her mother’s sight, logged into UO14."
     "The voice channel had four people—clearly, Lindsey had invited the newcomers. The team was gathered by the Grand Crystal in Ocean City."
     show wj_game at right
     with dissolve
@@ -502,7 +505,7 @@ label onefour:
     ag "Still, a school setting could work."
     kg "We did consider writing a more serious, traditional storyline."
     ag "But creating something meaningful and deep is challenging."
-    ag "We’re still just high school students… We don't have that much literary experience."
+    ag "We’re still just high school students… We don’t have that much literary experience."
     kg "Yeah, I agree with Allie."
     kg "Building a new fictional world is too time-consuming."
     kg "Our story should probably stay closer to real life."
@@ -533,6 +536,129 @@ label onefour:
     "Donna didn’t pay much attention to the rest of their brainstorming."
     "Her thoughts kept circling back to something Lindsey had said:"
     "“Basing it on our own experiences…”"
+    jump twoone
+
+label twoone:
+    $ tb_design = "quyang"
+    scene cg_sleep
+    with fade
+    play music "audio/something2.mp3"
+    "Donna’s sleeping posture is somewhat strange. She isn’t short for girls in this age, but when sleeping, she always unconsciously curls up into a ball."
+    "She stares blankly into space, thinking about what Lindsey said earlier."
+    d "Adapting my own experiences… What have I even experienced?"
+    "Donna silently turns over, curling herself into an even smaller ball, trying to find some sense of security this way."
+    d "Such a boring life, everyone would hate it if I told them about it. Ah, it’s already past midnight, I need to sleep quickly…"
+    "Finally shaking off her scattered and chaotic thoughts, Donna lies in bed counting sheep, trying to drift off to sleep."
+    d "Three hundred and twenty, three hundred nineteen… mmm…"
+    "The hour hand moved across half the clock face before Donna finally began to feel drowsy."
+    "Only soft breathing remains in the room. However, those earlier memories and thoughts haven’t disappeared, instead gradually weaving into her dreamscape, taking her back to those deeply buried memories."
+    scene classroomdream
+    with dissolve
+    ca "Hey, that’s Donna over there, right!"
+    cb "Must be her, always wearing that sour expression, who knows who she’s trying to impress."
+    ca "I heard her family is pretty well-off, so why does she always have that “keep away” expression? No wonder the other girls exclude her."
+    cb "Forget about her, she’s a bad omen. Let’s hurry home and play UO14. My sister told me the game has really strong “social features”, and she made lots of friends through it."
+    ca "Whoa, look at that crazy girl’s computer! She’s playing UO14 too?"
+    cb "Pff, probably just trying to find friends. Someone like her, with no friends in real life, no way she’ll make any online either!"
+    "The two bullies left, laughing loudly."
+    scene restaurantdream
+    with dissolve
+    "The dream shifts to a crowded fast food restaurant."
+    show lindsey_happy
+    with dissolve
+    l "…Hi, I'm Lindsey from 9th grade…"
+    scene gardendream
+    with dissolve
+    "At the Central Garden…"
+    show lindsey_happy
+    with dissolve
+    l "Hey— hey— Donna! Over here."
+    scene game1dream
+    with dissolve
+    "Inside UO14…"
+    show wz_game at left
+    with dissolve
+    show wj_game
+    with dissolve
+    show lf_game at right
+    with dissolve
+    l "Let's take a photo! Come on!"
+    k "We're counting on you for the script, Donnie!"
+    a "Do your best!"
+    scene room1
+    with fade
+    "Donna is awakened by an alarm clock. She opens her eyes, staring at the ceiling, slightly dazed. Realizing there's a faint smile on her lips, she gently presses them together, hiding the smile away."
+    "So, does this mean she finally made friends? She had downloaded that online game without thinking twice. Through it she met two senior students—and that girl who loves to smile."
+    d "Club activities, huh…"
+    "Although she has become skilled at hiding her emotions behind a calm expression, she realized —she might be looking forward to it: to the club, to the future, and to that girl."
+    "Thinking about this, Donna changed into her school uniform and set off for school. There goes a new day."
+    jump twotwo
+
+label twotwo:
+    $ tb_design = "quyang"
+    scene classroom
+    with dissolve
+    play music "audio/school2.mp3"
+    "In the blink of an eye, the day’s classes are about to end. At two in the afternoon, Donna prepares to head for Study Hall. She had just found a secluded corner to sit down, when she saw the blonde girl appearing at the study room door. "
+    show lindsey_neutral at right
+    show lindsey_neutral:
+        linear 1 xalign 0.5
+    l "Excuse me, is Donna here?"
+    "Donna looks up, meeting Lindsey's bright eyes directly. At this moment, Donna…"
+    menu:
+        "What would Donna do?"
+        "Quickly hides, using her laptop to cover her face.":
+            "Donna quickly hides behind her computer screen. She feels nervous and awkward, seemingly not expecting Lindsey to come looking for her in the study hall."
+            "So, she bites her lip, trying hard not to make a sound."
+            "Getting no answer, Lindsey stands at the door looking around. Soon, she spots Donna sitting in the last row, hiding behind her laptop screen."
+        "Timidly responds to Lindsey. ":
+            if add1 == False:
+                $ add1 = True
+                $ weijiangfriendshippoints+=1
+            "Donna peeks out from behind her computer screen. Nervously, she trembles as she waves her hand, gesturing to Lindsey to come over. Then, in a tiny voice, she answers:"
+            d "…I'm here. Don't call so loudly, there are so many people…"
+    l "Ah, Donnie, so that's where you are! Good afternoon!"
+    "Donna watches Lindsey walking towards her from afar. Her mind starts racing… When did she get a “new name”? Only when Lindsey comes over and waves in front of her does she snap back to reality, stammering."
+    d "…Don…Donnie?"
+    show lindsey_neutral:
+        linear 0.5 yalign 1.1
+        linear 0.5 yalign 1.05
+    l "It's a cute nickname, right? Always calling you Donna feels too formal. You can call me Linnie, that's what my friends call me!"
+    d "Ah, okay…Linnie."
+    d "Donna looks away, tilting her head slightly to hide her embarrassment. She’s still not used to such intimate nicknames."
+    d "…Did you need something?"
+    l "Not really. Just that we haven't seen each other in person for several days, and I missed you."
+    d "But… How did you know I was in this class?"
+    hide lindsey_neutral
+    show lindsey_happy 
+    "Lindsey playfully winks at her."
+    l "Because I have magic— Just kidding, I guessed! Since you're a “Star Student” with straight As! I had a feeling you’d take study hall to complete homework."
+    l "This is called— a pop inspection! Let me see if you're secretly studying behind my back—"
+    "The fluffy blonde head suddenly leans in next to Donna, eyes fixed unblinkingly on her computer. —On the screen is a new blank document."
+    d "Ah, I'm not studying… I was trying to write our game script, but I can't think of any ideas."
+    l "Oh? Is that so? Where are you stuck? Maybe like we discussed last time, try writing about your own experiences. If you really can't think of anything from your own experience, how about writing about teenage themes? Like a romantic comedy? Have you ever…"
+    hide lindsey_happy
+    show lindsey_sad
+    stop music
+    "Lindsey's voice suddenly cuts off. "
+    d "{i}I know Lindsey must have realized this topic might not be “suitable”!{/i}"
+    d "{i}After all, I don’t have many friends, and have never experienced the so-called “romantic comedy”.{/i}"
+    d "{i}Lindsey probably knows this would be difficult for me…{/i} "
+    d "{i}Well, my tragic experiences had determined from the start that I wouldn't be a good screenwriter…{/i}"
+    hide lindsey_sad
+    show lindsey_neutral
+    "Lindsey's clear voice pulls Donna out of the abyss of negative emotions."
+    "Ah, sorry, I shouldn’t have suddenly asked about such private matters! Then… perhaps, could you show us what you’ve written before? We could brainstorm together—"
+    d "……"
+    "Donna unconsciously clenches her fists, her nails digging deep into her palms. Lindsey's words clearly reminded her of those works that her mother had torn to pieces. Along with those pieces… went her dream of becoming a novelist."
+    d "…Most of them might be hard to find now, but I'll look for them when I get home."
+    hide lindsey_neutral
+    show lindsey_afraid
+    "Donna looks up after speaking. She sees Lindsey's rosy cheeks gradually turning pale, seemingly feeling guilty about saying the wrong thing."
+    l "Ah, okay… then, I should head back to class? The next period is-is about to start… "
+    hide lindsey_afraid
+    with dissolve
+    "Donna watches Lindsey awkwardly disappearing from view and quietly sighed. There isn't even a next period… school's about to end. While thinking about those things, her expression must have been bad, she wonders if it scared her…"
     return
 
 
@@ -582,7 +708,7 @@ label scene1:
     with dissolve
     $ tb_design = "quyang"
     
-    "Qu Yang walks to the school\'s central park (1st time)"
+    "Qu Yang walks to the school\’s central park (1st time)"
     "What will Qu Yang do?"
     menu:
         "What will you do"
@@ -600,7 +726,7 @@ label scene2:
     with dissolve
     $ tb_design = "weijiang"
     
-    "Qu Yang walks to the school\'s central park (2nd time)"
+    "Qu Yang walks to the school\’s central park (2nd time)"
     "What will Qu Yang do?"
     menu:
         "What will you do"
@@ -616,7 +742,7 @@ label scene3:
     with dissolve
     show qu_yang at right
     with dissolve
-    "Qu Yang walks to the school\'s central park (3rd time)"
+    "Qu Yang walks to the school\’s central park (3rd time)"
     "What will Qu Yang do?"
     menu:
         "What will you do"
