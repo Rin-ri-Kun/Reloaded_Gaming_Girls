@@ -101,7 +101,7 @@ label start:
     "Welcome to Unique Gaming Girls - Reloaded Edition!\nUse your mouse to click through the story and make choices when needed."
     "Note: This game is set in a fictional school setting, combining elements from different countries."
     "Note: This game is a project submitted for Yuri Game Jam 2024."
-    "Please enjoy. (this time, we promise it’s actually enjoyable!)"
+    "Please enjoy. (This time, we promise it’s actually enjoyable!)"
     jump oneone
 
 label oneone:
@@ -553,7 +553,7 @@ label twoone:
     "The hour hand moved across half the clock face before Donna finally began to feel drowsy."
     "Only soft breathing remains in the room. However, those earlier memories and thoughts haven’t disappeared, instead gradually weaving into her dreamscape, taking her back to those deeply buried memories."
     scene classroomdream
-    with dissolve
+    with fade
     ca "Hey, that’s Donna over there, right!"
     cb "Must be her, always wearing that sour expression, who knows who she’s trying to impress."
     ca "I heard her family is pretty well-off, so why does she always have that “keep away” expression? No wonder the other girls exclude her."
@@ -566,7 +566,7 @@ label twoone:
     "The dream shifts to a crowded fast food restaurant."
     show lindsey_happy
     with dissolve
-    l "…Hi, I'm Lindsey from 9th grade…"
+    l "…Hi, I’m Lindsey from 9th grade…"
     scene gardendream
     with dissolve
     "At the Central Garden…"
@@ -582,12 +582,12 @@ label twoone:
     with dissolve
     show lf_game at right
     with dissolve
-    l "Let's take a photo! Come on!"
-    k "We're counting on you for the script, Donnie!"
+    l "Let’s take a photo! Come on!"
+    k "We’re counting on you for the script, Donnie!"
     a "Do your best!"
     scene room1
     with fade
-    "Donna is awakened by an alarm clock. She opens her eyes, staring at the ceiling, slightly dazed. Realizing there's a faint smile on her lips, she gently presses them together, hiding the smile away."
+    "Donna is awakened by an alarm clock. She opens her eyes, staring at the ceiling, slightly dazed. Realizing there’s a faint smile on her lips, she gently presses them together, hiding the smile away."
     "So, does this mean she finally made friends? She had downloaded that online game without thinking twice. Through it she met two senior students—and that girl who loves to smile."
     d "Club activities, huh…"
     "Although she has become skilled at hiding her emotions behind a calm expression, she realized —she might be looking forward to it: to the club, to the future, and to that girl."
@@ -604,7 +604,7 @@ label twotwo:
     show lindsey_neutral:
         linear 1 xalign 0.5
     l "Excuse me, is Donna here?"
-    "Donna looks up, meeting Lindsey's bright eyes directly. At this moment, Donna…"
+    "Donna looks up, meeting Lindsey’s bright eyes directly. At this moment, Donna…"
     menu:
         "What would Donna do?"
         "Quickly hides, using her laptop to cover her face.":
@@ -616,50 +616,210 @@ label twotwo:
                 $ add1 = True
                 $ weijiangfriendshippoints+=1
             "Donna peeks out from behind her computer screen. Nervously, she trembles as she waves her hand, gesturing to Lindsey to come over. Then, in a tiny voice, she answers:"
-            d "…I'm here. Don't call so loudly, there are so many people…"
-    l "Ah, Donnie, so that's where you are! Good afternoon!"
+            d "…I’m here. Don’t call so loudly, there are so many people…"
+    l "Ah, Donnie, so that’s where you are! Good afternoon!"
     "Donna watches Lindsey walking towards her from afar. Her mind starts racing… When did she get a “new name”? Only when Lindsey comes over and waves in front of her does she snap back to reality, stammering."
     d "…Don…Donnie?"
     show lindsey_neutral:
         linear 0.5 yalign 1.1
         linear 0.5 yalign 1.05
-    l "It's a cute nickname, right? Always calling you Donna feels too formal. You can call me Linnie, that's what my friends call me!"
+    l "It’s a cute nickname, right? Always calling you Donna feels too formal. You can call me Linnie, that’s what my friends call me!"
     d "Ah, okay…Linnie."
     d "Donna looks away, tilting her head slightly to hide her embarrassment. She’s still not used to such intimate nicknames."
     d "…Did you need something?"
-    l "Not really. Just that we haven't seen each other in person for several days, and I missed you."
+    l "Not really. Just that we haven’t seen each other in person for several days, and I missed you."
     d "But… How did you know I was in this class?"
     hide lindsey_neutral
     show lindsey_happy 
     "Lindsey playfully winks at her."
-    l "Because I have magic— Just kidding, I guessed! Since you're a “Star Student” with straight As! I had a feeling you’d take study hall to complete homework."
-    l "This is called— a pop inspection! Let me see if you're secretly studying behind my back—"
+    l "Because I have magic— Just kidding, I guessed! Since you’re a “Star Student” with straight As! I had a feeling you’d take study hall to complete homework."
+    l "This is called— a pop inspection! Let me see if you’re secretly studying behind my back—"
     "The fluffy blonde head suddenly leans in next to Donna, eyes fixed unblinkingly on her computer. —On the screen is a new blank document."
-    d "Ah, I'm not studying… I was trying to write our game script, but I can't think of any ideas."
-    l "Oh? Is that so? Where are you stuck? Maybe like we discussed last time, try writing about your own experiences. If you really can't think of anything from your own experience, how about writing about teenage themes? Like a romantic comedy? Have you ever…"
+    d "Ah, I’m not studying… I was trying to write our game script, but I can’t think of any ideas."
+    l "Oh? Is that so? Where are you stuck? Maybe like we discussed last time, try writing about your own experiences. If you really can’t think of anything from your own experience, how about writing about teenage themes? Like a romantic comedy? Have you ever…"
     hide lindsey_happy
     show lindsey_sad
     stop music
-    "Lindsey's voice suddenly cuts off. "
+    "Lindsey’s voice suddenly cuts off. "
     d "{i}I know Lindsey must have realized this topic might not be “suitable”!{/i}"
     d "{i}After all, I don’t have many friends, and have never experienced the so-called “romantic comedy”.{/i}"
     d "{i}Lindsey probably knows this would be difficult for me…{/i} "
-    d "{i}Well, my tragic experiences had determined from the start that I wouldn't be a good screenwriter…{/i}"
+    d "{i}Well, my tragic experiences had determined from the start that I wouldn’t be a good screenwriter…{/i}"
     hide lindsey_sad
     show lindsey_neutral
-    "Lindsey's clear voice pulls Donna out of the abyss of negative emotions."
+    play music "audio/school2.mp3"
+    "Lindsey’s clear voice pulls Donna out of the abyss of negative emotions."
     "Ah, sorry, I shouldn’t have suddenly asked about such private matters! Then… perhaps, could you show us what you’ve written before? We could brainstorm together—"
     d "……"
-    "Donna unconsciously clenches her fists, her nails digging deep into her palms. Lindsey's words clearly reminded her of those works that her mother had torn to pieces. Along with those pieces… went her dream of becoming a novelist."
-    d "…Most of them might be hard to find now, but I'll look for them when I get home."
+    "Donna unconsciously clenches her fists, her nails digging deep into her palms. Lindsey’s words clearly reminded her of those works that her mother had torn to pieces. Along with those pieces… went her dream of becoming a novelist."
+    d "…Most of them might be hard to find now, but I’ll look for them when I get home."
     hide lindsey_neutral
     show lindsey_afraid
-    "Donna looks up after speaking. She sees Lindsey's rosy cheeks gradually turning pale, seemingly feeling guilty about saying the wrong thing."
+    "Donna looks up after speaking. She sees Lindsey’s rosy cheeks gradually turning pale, seemingly feeling guilty about saying the wrong thing."
     l "Ah, okay… then, I should head back to class? The next period is-is about to start… "
     hide lindsey_afraid
     with dissolve
-    "Donna watches Lindsey awkwardly disappearing from view and quietly sighed. There isn't even a next period… school's about to end. While thinking about those things, her expression must have been bad, she wonders if it scared her…"
+    "Donna watches Lindsey awkwardly disappearing from view and quietly sighed. There isn’t even a next period… school’s about to end. While thinking about those things, her expression must have been bad, she wonders if it scared her…"
+    jump twothree
+
+label twothree:
+    $ tb_design = "quyang"
+    play music "audio/inspired.mp3"
+    scene room1memory
+    with fade
+    "Some years ago…"
+    show mrsqu
+    dm "What kind of nonsense are you writing? You read so many books, and all you read are such nonsense? Can’t you write something more wholesome and uplifting?"
+    d "But, I’m writing about a tragedy… Writing it this way better highlights the emotional tension…"
+    dm "You’re just a child, what do you know about tragedy? You’ve always had enough to eat and wear at home, what could you possibly be unhappy about?"
+    "Young Donna just sat there on the bed, listening and watching. In her ears rang that woman’s seemingly endless mockery, while before her eyes, the drafts she had poured her heart into were mercilessly torn to shreds."
+    scene cg_ep2_3
+    "Donna’s fingers lightly tap on the desk— While writing the script just now, she had drifted into memories of those past fragments."
+    "Actually, writing stories was what she was best at and what she loved most. Whenever the characters in her writing experienced misfortune, her heart would tremble, as if she could feel their pain."
+    "However, her mother’s cold mockery always drew her into a whirlpool of self-doubt."
+    scene cg_ep3_3
+    "Suddenly, in Donna’s mind appear those lively, energetic girls from the club. Her lips curve slightly upward— "
+    "But quickly, this hint of a smile disappears. She lowers her head, her fingers lightly tracing across the desk, still carrying some unease. Perhaps, Lindsey and the others wouldn’t hate her stories…"
+    scene cg_ep2_3
+    d "…Let me try one more time."
+    d "And so, the girl picks up her pen and begins outlining her story on blank paper. This is bound to be another sleepless night."
+    jump twofour
+
+label twofour:
+    $ tb_design = "normal"
+    scene bridge
+    with dissolve
+    play music "<loop 4.58>audio/bgm1ok.mp3"
+    show lindsey_neutral at left
+    with dissolve
+    show mackenzie_neutral at right
+    with dissolve
+    l "Wow, this is my first time meeting senpai Mackenzie in person."
+    hide mackenzie_neutral
+    show mackenzie_happy at right
+    k "No need to be so formal, you can just call me Kenzie like Lili does!"
+    l "Okay Kenzie, no problem Kenzie!"
+    hide lindsey_neutral
+    show lindsey_happy at left
+    "Lindsey stamps her foot with a “pa” sound, brings her fingers together in a salute to her temple, and playfully sticks out her tongue. Though her movements are proper, they’re so playful that they are not serious or stiff, instead making it kind of funny."
+    k "Wow, that gesture is so cute! Come on, Lili, you do one too~"
+    hide mackenzie_happy
+    show mackenzie_sad
+    show allie_angry at right
+    with dissolve
+    "Allie directly chops Mackenzie on the head. Mackenzie dramatically clutches her head, pretending to be hurt and complaining."
+    k "Ouch! Lili, why do you hurt me both in-game and out—!"
+    a "Stop fooling around, didn’t we have something important to discuss today? Donna, how’s your script coming along?"
+    hide allie_angry
+    show donna_neutral at right
+    hide mackenzie_sad
+    show mackenzie_neutral
+    d "Ah, I was just going to talk about that…"
+    l "Wow, is Donnie’s masterpiece finished already! Such high efficiency!"
+    d "Yes. But I need everyone’s help with feedback for iterations…"
+    "Donna’s voice is very faint, she has no confidence in her own writing at all."
+    l "Oh come on, don’t be modest, I’m sure you wrote something amazing! Can we take a look at your story?"
+    "​​Lindsey gently patted Donna on the shoulder, but she instinctively moved aside.\nAfter hesitating for a moment, she took out her laptop."
+    scene cg_downfly
+    with dissolve
+    stop music fadeout 1.0
+    "Donna’s story is heavy.\nThe title of the story is “Flying Downward”, and it tells the story of…\nA person who took their own life."
+    "The story is short, narrating the thoughts of a high school girl as she jumps from a great height, reflecting on her life—\na life that, unfortunately, didn’t contain much happiness."
+    "The writing is filled with a stream-of-consciousness flow of questions and accusations.\nThe girl is puzzled by the injustices of society and the frustrations of her life."
+    "She doesn’t understand where her father, who frequently stayed out all night, went.\nNor does she understand why her mother always unleashed anger on her, as if she were the source of all the family’s misfortunes."
+    "Even more, she doesn’t understand why her quiet personality was seen as a weakness, making her a target for bullying and mockery from her classmates."
+    "Eventually, even her peers stopped bothering her—she became someone ignored by everyone."
+    "In this solitude and despair, the protagonist develops an unusual thought:\nShe compares the act of falling from a building to “flying downward”.\nIt is described as a state of freedom, without any constraints."
+    "In her brief life, this is the first and only time she feels such pure “beauty”."
+    "However, the enjoyment of “flying” has an end."
+    "The girl’s final thought is:\n“My death will probably look ugly. I hope I won’t trouble the cleaners or disturb the passersby too much…”"
+    scene bridge
+    show lindsey_sad:
+        xalign 0.0
+        yalign 1.0
+    show donna_neutral:
+        xalign 0.33
+        yalign 1.0
+    show mackenzie_sad:
+        xalign 0.67
+        yalign 1.0
+    show allie_sad:
+        xalign 1.0
+        yalign 1.0
+    "Donna’s story ends abruptly here."
+    play music "audio/something2.mp3"
+    a "Uh…I don’t really know what to say…"
+    show allie_sad:
+        linear 0.5 xalign 0.9
+        linear 0.5 xalign 1.0
+    "Allie looked over at Mackenzie, as if seeking help."
+    hide mackenzie_sad
+    show mackenzie_afraid:
+        xalign 0.67
+        yalign 1.0
+    k "Don’t look at me; I’m terrible at literature."
+    hide allie_sad
+    show allie_angry:
+        xalign 1.0
+        yalign 1.0
+    show allie_angry:
+        linear 0.5 xalign 0.9
+        linear 0.5 xalign 1.0
+    "Allie shot Mackenzie a glare, then turned back to Donna and sighed softly."
+    hide donna_neutral
+    show donna_afraid:
+        xalign 0.33
+        yalign 1.0
+    d "I understand… This piece of writing is just too… overly sentimental, right? I’ll rewrite it."
+    "Disappointment wasn’t visible on Donna’s face. She simply pressed her lips together and quickly regained her composure."
+    a "Ah, you misunderstood. That’s not what I meant…"
+    stop music
+    hide lindsey_sad
+    show lindsey_angry:
+        xalign 0.0
+        yalign 1.0
+    show lindsey_angry:
+        linear 0.5 xalign 0.05 yalign 1.0
+        linear 0.5 xalign 0.05 yalign 1.05
+        linear 0.5 xalign 0.0 yalign 1.05
+        linear 0.5 xalign 0.00 yalign 1.0
+    l "What are you saying!"
+    play music "audio/inspired.mp3"
+    scene cg_ep2_4
+    with dissolve
+    "Lindsey slams her hand on the table, her voice growing louder, immediately drawing the attention of the three girls in the activity room. Her eyes are slightly red, clearly not calm inside."
+    l "But you wrote so well…"
+    "Lindsey’s voice carries a hint of choking up, but she firmly continues."
+    l "The emotions you put into the story are so strong, and your writing is excellent— It really moved me deeply! Ah, sorry, I might be a bit too excited…"
+    "I can’t describe my feelings clearly, but Donnie, you really wrote it well! Don’t doubt yourself! You can be more confident!"
+    scene bridge
+    show lindsey_neutral:
+        xalign 0.0
+        yalign 1.0
+    show donna_sad:
+        xalign 0.33
+        yalign 1.0
+    show mackenzie_neutral:
+        xalign 0.67
+        yalign 1.0
+    show allie_neutral:
+        xalign 1.0
+        yalign 1.0
+    "Allie now also catches up with Lindsey’s train of thought."
+    a "Yes, yes, I think you handled the conflict between the beautiful fantasy and the cruel reality really well. "
+    a "The approach to tragedy is also quite unique. From the perspective of “appreciating and understanding tragedy”, it suddenly becomes easy to understand and empathize with that falling girl."
+    k "Though I’m not as professional as Lili, and can’t offer very good advice, I also think this script is amazing! Donna, don’t be too hard on yourself."
+    hide donna_sad
+    show donna_afraid:
+        xalign 0.33
+        yalign 1.0
+    "The expression on Donna’s face suddenly freezes, then turns to surprise and confusion. She tightly presses her lips together."
+    d "Is… is that so? Then what else do I need to do…"
+    "Donna’s usually calm voice ripples like disturbed water, showing slight rises and falls in tone."
+    a "Just keep refining this script, it’s really good! Let’s make our game based on this story. Ken-ken, what do you think?"
+    k "Mm, I agree! Let our game creation journey begin from here!"
     return
+
 
 
 label test:
