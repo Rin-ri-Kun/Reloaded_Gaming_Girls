@@ -100,7 +100,6 @@ label start:
     scene bridge
     "Welcome to Unique Gaming Girls - Reloaded Edition!\nUse your mouse to click through the story and make choices when needed."
     "Note: This game is set in a fictional school setting, combining elements from different countries."
-    "Note: This game is a project submitted for Yuri Game Jam 2024."
     "Please enjoy. (This time, we promise it’s actually enjoyable!)"
     jump oneone
 
@@ -625,7 +624,7 @@ label twotwo:
         linear 0.5 yalign 1.05
     l "It’s a cute nickname, right? Always calling you Donna feels too formal. You can call me Linnie, that’s what my friends call me!"
     d "Ah, okay…Linnie."
-    d "Donna looks away, tilting her head slightly to hide her embarrassment. She’s still not used to such intimate nicknames."
+    "Donna looks away, tilting her head slightly to hide her embarrassment. She’s still not used to such intimate nicknames."
     d "…Did you need something?"
     l "Not really. Just that we haven’t seen each other in person for several days, and I missed you."
     d "But… How did you know I was in this class?"
@@ -682,7 +681,7 @@ label twothree:
     "But quickly, this hint of a smile disappears. She lowers her head, her fingers lightly tracing across the desk, still carrying some unease. Perhaps, Lindsey and the others wouldn’t hate her stories…"
     scene cg_ep2_3
     d "…Let me try one more time."
-    d "And so, the girl picks up her pen and begins outlining her story on blank paper. This is bound to be another sleepless night."
+    "And so, the girl picks up her pen and begins outlining her story on blank paper. This is bound to be another sleepless night."
     jump twofour
 
 label twofour:

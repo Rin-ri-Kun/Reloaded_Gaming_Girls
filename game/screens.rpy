@@ -657,10 +657,11 @@ screen about():
     ## screen.
     use game_menu1(_("About"), scroll="viewport"):
 
-        style_prefix "about"
+        
 
         vbox:
-
+            style_prefix "about"
+            xmaximum 1000
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 338: The textbutton statement is not a valid child of the imagebutton statement.
-    textbutton _("End Replay") action EndReplay(confirm=True)
-              ^
+File "game/screens.rpy", line 661: 'xmaximum' is not a keyword argument or valid child of the use statement.
+    xmaximum 1000
+            ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Sat Nov 23 23:17:10 2024
+Sat Nov 30 02:02:15 2024

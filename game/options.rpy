@@ -29,14 +29,18 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""This game was attend in "Yuri Game Jam".\n
-Script:\n
-Art:\n
-Music & sound: KoliQed, isday, ProfBrain,\n
-Programming: Seth, KoliQed,\n
-Translation: Kevin,\n
-Testing:\n
-Fort: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}licence is here{/a})\n
+define gui.about = _p("""This game is a project submitted for Yuri Game Jam 2024, hosted by itch.io.\n
+Producer: Juehe\n
+Creative Director: KoliQed\n
+Story: Yan Chen (Rain), Kevin Chen\n
+Art: Amy Ding, Gabrielle Dela Cueva, Yaxuan Teng, Yanwei Zeng, Akihi\n
+Music & Sound: KoliQed, FallingStars, Ashlyn Dai, ProfBrian\n
+Programming: Juehe, KoliQed\n
+UI and Background Edits: Juehe\n
+Quality Assurance: Allen Yang\n
+Translation and Miscellanous: Jannie Wang, Kevin Chen, CJ Cortes, Juehe\n
+Special Thanks: The original Unique Gaming Girls developing team, all support from RDFZ Game Design, and you playing our game!\n
+Font Used: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}license is here{/a})\n
 """)
 
 
