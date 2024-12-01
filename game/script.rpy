@@ -86,6 +86,9 @@ image mackenzie_happy:
 image allie_happy:
     "images/allie_happy.PNG"
     zoom 0.4
+image mrsqu:
+    "images/mrsqu.PNG"
+    zoom 0.27
 label splashscreen:
     $ tb_design = "none"
     show unitedbackground

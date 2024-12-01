@@ -33,9 +33,9 @@ define gui.about = _p("""This game is a project submitted for Yuri Game Jam 2024
 Producer: Juehe\n
 Creative Director: KoliQed\n
 Story: Yan Chen (Rain), Kevin Chen\n
-Art: Amy Ding, Gabrielle Dela Cueva, Yaxuan Teng, Yanwei Zeng, Akihi\n
+Art: Amy Ding, Gabrielle Dela Cueva, Yaxuan Teng, Wendy Zeng, Akihi\n
 Music & Sound: KoliQed, FallingStars, Ashlyn Dai, ProfBrian\n
-Programming: Juehe, KoliQed\n
+Programming: KoliQed, Juehe\n
 UI and Background Edits: Juehe\n
 Quality Assurance: Allen Yang\n
 Translation and Miscellanous: Jannie Wang, Kevin Chen, CJ Cortes, Juehe\n
