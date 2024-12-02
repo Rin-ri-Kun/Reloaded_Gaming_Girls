@@ -692,6 +692,7 @@ label twofour:
     scene bridge
     with dissolve
     play music "<loop 4.58>audio/bgm1ok.mp3"
+    "The following day…"
     show lindsey_neutral at left
     with dissolve
     show mackenzie_neutral at right
@@ -792,6 +793,7 @@ label twofour:
     "Lindsey slams her hand on the table, her voice growing louder, immediately drawing the attention of the three girls in the activity room. Her eyes are slightly red, clearly not calm inside."
     l "But you wrote so well…"
     "Lindsey’s voice carries a hint of choking up, but she firmly continues."
+    scene cg_wj_angry
     l "The emotions you put into the story are so strong, and your writing is excellent— It really moved me deeply! Ah, sorry, I might be a bit too excited…"
     "I can’t describe my feelings clearly, but Donnie, you really wrote it well! Don’t doubt yourself! You can be more confident!"
     scene bridge
