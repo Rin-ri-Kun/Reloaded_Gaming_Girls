@@ -283,7 +283,7 @@ label onethree:
         xalign 1.0
     "Donna’s face flushes with a hint of embarrassment. "
     show donna_sad:
-        linear 1 xalign 0.4 zoom 1
+        linear 1 xalign 0.3 zoom 1
     "She quickly walks over and gently tugs on Lindsey’s sleeve."
     d "Everyone’s looking at you…"
     hide lindsey_happy
@@ -293,11 +293,11 @@ label onethree:
     l "Hmm…Debate Club…Modern Music Club…Cultural Exchange Club…Oh, Anime Club! That looks interesting!"
     hide donna_sad
     show donna_neutral:
-        xalign 0.4
+        xalign 0.3
         yalign 1.0
     show donna_neutral:
-        linear 0.5 xalign 0.35
-        linear 0.5 xalign 0.4
+        linear 0.5 xalign 0.25
+        linear 0.5 xalign 0.3
     "Lindsey feels another tug on her sleeve."
     d "I thought we were looking for a gaming club…"
     l "Oh—right, sorry, sorry! Got a little carried away there."
@@ -342,7 +342,7 @@ label onethree:
     show lindsey_afraid at left
     hide donna_neutral
     show donna_afraid:
-        xalign 0.4
+        xalign 0.3
         yalign 1.0
     l "So…you’re a ghost club?"
     hide allie_neutral
@@ -350,7 +350,7 @@ label onethree:
     a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
     hide donna_afraid
     show donna_neutral:
-        xalign 0.4
+        xalign 0.3
         yalign 1.0
     hide lindsey_afraid
     show lindsey_neutral at left
@@ -380,7 +380,7 @@ label onethree:
     a "We’re on the Cat server…"
     hide donna_neutral
     show donna_happy:
-        xalign 0.4
+        xalign 0.3
         yalign 1.0
     "Donna’s heart skips, and a flash of excitement leaks from her usually stolid face. Lindsey lets out a surprised gasp."
     "Allie gives a dumbfounded stare, clearly taken aback by their reactions."
