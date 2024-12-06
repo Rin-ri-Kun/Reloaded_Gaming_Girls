@@ -708,8 +708,13 @@ label twofour:
     k "Wow, that gesture is so cute! Come on, Lili, you do one too~"
     hide mackenzie_happy
     show mackenzie_sad
-    show allie_angry at right
-    with dissolve
+    show allie_angry at right with dissolve:
+        xzoom -1
+    show allie_angry at right:
+        xzoom -1
+        rotate_pad False
+        linear 0.2 rotate -45 yalign 1.1
+        linear 0.2 rotate 0 yalign 1.0
     "Allie directly chops Mackenzie on the head. Mackenzie dramatically clutches her head, pretending to be hurt and complaining."
     k "Ouch! Lili, why do you hurt me both in-game and out—!"
     a "Stop fooling around, didn’t we have something important to discuss today? Donna, how’s your script coming along?"
