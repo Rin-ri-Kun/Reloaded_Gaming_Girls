@@ -950,7 +950,10 @@ label interlude1:
             k "You always create such amazing things! I love it."
             hide allie_happy
             show allie_neutral at right
+            show allie_neutral:
+                linear 0.5 yalign 1.3
             a "Stop praising me, you’re making me shy… "
+            show allie_neutral at right
             "Though Allie says this, Donna notices her slightly upturned lips and that barely concealed look of pride."
             "Mackenzie pauses her work, turns to look at Allie, her tone as gentle as ever."
             k "That’s because Lili really does excellent work. \nYou deserve all the praise."
@@ -1006,8 +1009,8 @@ label interlude2:
                 "Donna comes to the central garden this time."
             show lindsey_happy with dissolve:
                 xalign 1.0 yalign 1.0
-                linear 0.5 xalign 0.75 yalign 0.5
-                linear 0.5 xalign 0.5 yalign 1.0
+                linear 0.2 xalign 0.75 yalign 0.3
+                linear 0.2 xalign 0.5 yalign 1.0
             "However, before she reaches the garden entrance, a figure suddenly jumps out from behind the bushes."
             l "Donnie! Surprise!"
             l "I’ve been waiting for you for so long!"
@@ -1016,8 +1019,8 @@ label interlude2:
             d "You… Why did you suddenly pop out?"
             "Lindsey playfully sticks out her tongue."
             if interludechoice1 == 1:
-                "Hehe, I noticed you were coming later than last time, so I wanted to surprise you!"
-            "Come on, let’s go to club activities~"
+                l "Hehe, I noticed you were coming later than last time, so I wanted to surprise you!"
+            l "Come on, let’s go to club activities~"
             scene bridge 
             with dissolve
             show mackenzie_neutral at left
@@ -1047,8 +1050,8 @@ label interlude2:
             show allie_neutral at right
             "As Donna opens the door, she sees Allie hunched over the desk, humming a tune while jotting down inspiration, while Mackenzie gently places a warm milk tea in front of Allie."
             show mackenzie_neutral:
-                linear 2.5 xalign 0.8 yalign 1.0
-                linear 2.5 xalign 0.0 yalign 1.0
+                linear 2 xalign 0.8 yalign 1.0
+                linear 2 xalign 0.0 yalign 1.0
             k "Lili, don’t tire yourself out, take a break and have something to drink."
             a "Thanks, Kenken. You’re always so thoughtful!"
             hide allie_neutral
