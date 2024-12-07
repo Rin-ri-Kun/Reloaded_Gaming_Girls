@@ -26,9 +26,9 @@ define add3 = False
 # The game starts here.
 
 #default tb_design = "normal"
-while True: 
-    image textbox:
-        "gui/textbox_[tb_design].png"
+#while True: 
+image textbox:
+    "gui/textbox_[tb_design].png"
 
 image lindsey_neutral:
     "images/Lindsey_neutral.PNG"
@@ -1128,7 +1128,7 @@ label threeone:
     l "What if Donna thinks I’m meddling… "
     "Lindsey holds her phone, opens Donna’s chat window, but can’t bring herself to send a message."
     "She sighs and falls back onto her bed."
-    "How do I even say it… "
+    l "How do I even say it… "
     return
 
 
