@@ -243,7 +243,15 @@ label onetwo:
     show wj_game at right
     with moveinleft
     "Finally, they sit together on a grassy hill, gazing at a starry sky. "
+    scene gamegrassland
+    show qy_game at left
+    show wj_game at right
+    show frame
+    with fade
     "A shooting star streaks across, carving a path through the darkness."
+    scene gamegrassland
+    show qy_game at left
+    show wj_game at right
     "Some say shooting stars carry wishes, each streak in the sky marking a new hope. Lindsey’s eye’s sparkle, fully believing the star will bring her something special."
     "But Donna watches in silence. A shooting star is just another part of the night sky. Perhaps, she just doesn’t believe in miracles anymore."
     "Against the backdrop of the night, every sound seems especially clear."
@@ -1072,7 +1080,7 @@ label interlude2:
             hide mackenzie_neutral
             hide allie_neutral
             hide lindsey_neutral
-            "The game design progresses steadily.\nSuch days seem to become the new normalcy."
+            "The game design project progresses steadily.\nSuch days seem to become the new normalcy."
             jump threeone
 
 label threeone:
@@ -1129,7 +1137,380 @@ label threeone:
     "Lindsey holds her phone, opens Donna’s chat window, but can’t bring herself to send a message."
     "She sighs and falls back onto her bed."
     l "How do I even say it… "
+    jump threetwo
+
+label threetwo:
+    $ tb_design = "weijiang"
+    scene bridge
+    with fade
+    play music "audio/something2.mp3"
+    "Another day at the club activity room…"
+    show donna_neutral
+    l "Ah, both of the senpais aren’t here today."
+    d "Then I’ll keep working on my script.\nLinnie, do you want to try drawing some concept art?"
+    "Lindsey, somewhat absent-minded, stares at the brush in her hand, but her mind is consumed with another question."
+    l "Ah… ah, no problem—"
+    l "But before that, Donna, I want to ask you…\nWhy did you write such a heavy story?"
+    hide donna_neutral
+    show donna_afraid
+    "Although it feels a bit too direct to ask, once the question left her mouth, Lindsey couldn’t take it back."
+    d "Didn’t the seniors suggest basing it on real experiences?\nSo I tried writing about my own story."
+    d "—but I did add some artistic adjustments, I haven’t actually jumped off a building yet."
+    l "Then… What about the other parts?"
+    d "If it’s about my family, those parts are mostly real."
+    d "My father really has been messing around with women other than my mother, and my mother… thinks I’m the burden of her failed marriage."
+    "Donna speaks in a calm tone, as if she is recounting a story that had nothing to do with her, as if these events had never hurt her."
+    l "And school… your classmates… "
+    d "My middle school classmates did bully me every day.\nBut they didn’t like me because I didn’t resist."
+    d "So after bullying me a few times, they stopped bothering me."
+    "Lindsey listens, her heart filled with guilt and pain.\nShe bites her lip, trying hard to suppress her emotions."
+    l "Donna… I’m really sorry, I can’t believe I’m hearing this… "
+    d "It’s okay, it’s all in the past now, and I’ve gotten used to it."
+    l "How can someone get used to something like that?"
+    "Lindsey mutters softly to herself. \nDonna doesn’t catch all of it and looks at her, confused."
+    hide donna_afraid
+    show donna_angry
+    d "Did you say something?"
+    stop music
+    l "How could you possibly get used to something like that!?"
+    play music "audio/inspired.mp3"
+    scene cg_wj_angry
+    "Lindsey suddenly stands up, and the sunset outside shines through her eyes, sparkling like jewels."
+    "She slams her hand down on the desk, unable to hold back her emotions anymore."
+    scene cg_ep3_2_01
+    "Donna stares at Lindsey, slightly stunned, as if her sudden outburst has caught her off guard."
+    "But she quickly recovers, her face showing confusion."
+    d "Lindsey, why are you crying? Are you okay? Do you need a tissue?"
+    l "Why are you comforting me? It should be me comforting you…"
+    l "—you’re the one who’s been hurt… why aren’t you upset?\n—How can you speak so calmly about all of this?"
+    scene cg_ep3_2_02
+    "Donna pauses for a moment before handing her a tissue.\nShe then spoke in that calm voice again."
+    d "I don’t think there’s anything to be upset about.\nThese things are just things that happened to me."
+    l "But… but you can’t just bottle it all up!"
+    l "I think maybe you should talk to a counselor… "
+    scene bridge
+    show donna_angry
+    "Lindsey tentatively suggests this, but she doesn’t expect her words to land like a sharp thorn, deeply embedding itself in Donna’s heart."
+    d "A counselor…?"
+    show donna_angry:
+        linear 0.5 xalign 0.5 yalign 0.8
+        linear 0.5 xalign 0.5 yalign 1.0
+    d "Lindsey… Do you think I’m “sick” like my mother does?"
+    l "No! That’s not what I meant!"
+    l "I just think… if there’s someone who can listen to you, it might make things a little easier… "
+    d "Does it really help?\nTalking to someone doesn’t make all these things disappear."
+    "Donna’s tone is calm, but there is a distance in her words that left Lindsey unsure of how to respond."
+    l "That’s not what I meant… I just want… I just want you to be okay… "
+    d "I’m fine, really.\nLindsey, you don’t have to make my problems your responsibility."
+    d "Sometimes, your concern… makes me feel a little burdened."
+    "The air is thick with heavy silence.\nLindsey lowers her head, unable to say a word."
+    "She feels as though an invisible but thick wall has formed between her and her friend across the table."
+    hide donna_angry
+    show donna_sad
+    d "It’s getting late, we should head home."
+    hide donna_sad
+    with dissolve
+    "Lindsey looks up, watching Donna’s retreating figure, her hand reaches out, but she doesn’t call out to her."
+    "The distance between them seems to grow just a little more."
+    jump threethree
+
+label threethree:
+    $ tb_design = "quyang"
+    scene cg_sleep
+    with fade
+    play music "audio/something2.mp3"
+    "Late into the night, the young girl on the bed still hasn’t fallen asleep."
+    d "Of course I couldn’t get used to it… "
+    "Donna had lied. She simply didn’t want to show her vulnerable side to her friends. Besides causing them unnecessary sadness, it wouldn’t serve any purpose. So in her bedroom, the only place where she was allowed to cry, Donna weeps silently."
+    "She curls up alone, trying her best not to make any noise. After all, she might disturb the neighbors."
+    stop music fadeout 2.0
+    play music "audio/inspired.mp3"
+    "It’s not that Donna hasn’t tried to fight against reality, but she was so powerless in the face of fate. She couldn’t mend her broken family, nor could she change the way her classmates ostracized her."
+    "But at least she got into a decent high school. She hoped her life might take a turn for the better here."
+    scene cg_ep3_3
+    "Suddenly, the image of that blonde girl appeared in her mind."
+    d "Linnie…"
+    "Actually, she really appreciated Lindsey’s concern, but was afraid of causing her trouble."
+    d "Linnie… I’m sorry… "
+    scene cg_sleep
+    "Donna apologizes softly as tears silently roll down her cheeks. Remembering Lindsey’s disappointed expression from that afternoon makes her heart ache as if pricked by a needle."
+    "Since starting high school, Lindsey made her feel the warmth of friendship for the first time. But this also made her afraid - afraid she would destroy everything."
+    d "If only things could stay like this forever…"
+    "She knows these words were just wishful thinking. For her, happiness is like a mirage that could vanish at any moment. She is someone destined not to deserve happiness."
+    d "But… Everyone is still by my side."
+    "At least for now, just for this moment… Perhaps she has the right to smile as well?"
+    jump threefour
+
+label threefour:
+    $ tb_design = "weijiang"
+    scene room2
+    with fade
+    play music "audio/school2.mp3"
+    "It is late at night, but Lindsey can’t sleep. She tosses and turns, her mind filled with Donna’s cold expression from that afternoon. Looking through her phone contacts, Lindsey hesitates before finally dialing Allie’s number."
+    scene cg_ep3_4
+    a "Hello, Lindsey? It’s so late, is something wrong?"
+    l "Senpai… I’m sorry for disturbing you at this hour. But… I really don’t know who else to talk to about this."
+    a "Don’t worry, take your time."
+    "Lindsey takes a deep breath and recounts her conversation with Donna from that afternoon. Her voice is filled with regret as she finishes."
+    l "When I mentioned the therapist, Donnie… She seemed very angry, and said my concern felt like a burden to her… Senpai, did I do something wrong?"
+    "Her question is met with a long silence. After a while, Allie mumbles."
+    a "So she’s been through something like that too… "
+    "Before she could finish, Lindsey’s voice cut in. She seems anxious and hasn’t noticed the detail in Allie’s words."
+    l "Senpai… I’m sure Donnie isn’t as indifferent to these things as she pretends to be… She must be feeling hurt! She’s just putting on a brave face because she doesn’t want to burden me with her negative emotions… "
+    k "Lindsey, calm down!"
+    l "Eh? Senpai Mackenzie, you’re there too?"
+    k "Yes, I’ve been listening. Don’t blame yourself too much. Your concern was right, but maybe you were too hasty."
+    k "Sometimes, when a friend is struggling, they don’t need you to solve their problems. They just need to know you’ll be there supporting them, waiting until they’re ready to take that step themselves."
+    a "Yes, Lindsey, take it slow. She needs time, and she needs to feel your patience."
+    l "Time… and companionship… "
+    scene room2
+    with dissolve
+    "After hanging up, Lindsey lies in bed, a new understanding forming in her mind."
+    l "Donnie, I understand now… I shouldn’t have gotten so emotional and made you feel like my concern was a burden. I need to convey my feelings to you more clearly."
+    jump threefourpointfive
+
+label threefourpointfive:
+    $ tb_design = "normal"
+    scene bridge
+    with fade
+    stop music fadeout 1.0
+    show lindsey_neutral at left
+    with dissolve
+    show donna_neutral at right
+    with dissolve
+    "A few days later, after club activities ended, Lindsey gathers her courage and called out to Donna, who was packing her bag in the empty activity room."
+    l "Donnie… wait a moment, I have something to tell you."
+    d "What is it?"
+    play music "audio/something2.mp3"
+    hide lindsey_neutral
+    show lindsey_sad at left
+    l "About that day, I’m sorry… I didn’t mean to make you feel like my concern was a burden, I just… I was just too hasty. I didn’t consider your feelings."
+    "Lindsey lowers her head, fingers tightly clasped, her voice filled with deep regret and self-reproach."
+    hide donna_neutral
+    show donna_sad at right
+    d "…Linnie, you don’t need to apologize."
+    l "No, I must apologize. I just want you to know, whether you want to talk about it or not, I’ll be here with you. You don’t have to bear everything alone, really… "
+    hide donna_sad
+    show donna_afraid at right
+    "Hearing these words, Donna’s hand tightens on her bag strap. Lindsey’s voice is soft, but it stirs complex emotions in her heart."
+    d "{i}Why does she go to such lengths… She’s always so unconditionally kind to me… Do I really deserve to be treated this way?{/i}"
+    "She remembers their argument in the activity room and her cold words that day. She doesn’t want to drag Lindsey down, but those suppressed emotions have been bottled up for too long, and she ended up hurting her friend."
+    "If she accepts her apology now, would she continue to be a burden?"
+    jump thechoice
+
+label thechoice:
+    $ tb_design = "quyang"
+    stop music
+    play sound "audio/heartbeat.wav"
+    scene bridge
+    with fade
+    show lindsey_neutral
+    with dissolve
+    menu:
+        "Will you accept Lindsey’s apology?"
+        "Reject":
+            stop sound
+            stop music
+            "Silence falls over the activity room. Donna lowers her eyes, shoulders her bag, and speaks with a hint of distance in her voice."
+            hide lindsey_neutral
+            show lindsey_sad
+            d "Thank you, but… I really don’t need this. Linnie, you’re too kind, but I’m not worth it."
+            "With that, she turns and leaves, leaving a crestfallen Lindsey standing frozen in place. \nThe distance between them would never close again."
+            jump badending
+        "Accept":
+            if weijiangfriendshippoints >= 2:
+                stop sound
+                jump threefive
+            else:
+                stop sound
+                "After a moment of silence, Donna finally nods."
+                d "…Thank you, Linnie. I’ll try to accept your kindness."
+                "Her tone is still somewhat distant, but there is a hint of softening. Their relationship has eased somewhat, but perhaps it is not enough to make much difference."
+                jump badending
+
+label threefive:
+    $ tb_design = "normal"
+    scene bridge
+    with dissolve
+    show lindsey_sad at left
+    show donna_sad at right
+    play music "audio/inspired.mp3"
+    "Donna’s gaze trembles slightly. She puts down her bag and speaks softly."
+    d "I should be the one apologizing… I’m sorry, Linnie. I shouldn’t have treated you that way. Actually, I really appreciate your concern, it’s just… I was afraid of being a burden to you."
+    "Lindsey is stunned for a moment, then breaks into her characteristic cheerful smile."
+    l "Donnie, how could you think like that! You’ll never be a burden to me, you’re my best partner! Whenever you need me, I’ll always be here for you!"
+    l "As long as you need me, I’ll always be here for you!"
+    show donna_sad:
+        linear 0.5 xalign 1.0 yalign 1.1
+        linear 0.5 xalign 1.0 yalign 1.0
+    "As Donna listens to these words, a flicker of faltering passes through her eyes."
+    d "I… It’s not that I don’t want to trust you.\nBut I’m afraid… I’m afraid……"
+    "Her voice gets lower and lower, as if she’s afraid that her weakness will be seen through."
+    hide lindsey_sad
+    show lindsey_neutral:
+        xalign 0.0 yalign 1.0
+        linear 1.5 xalign 0.4 yalign 1.2
+    "Lindsey, however, steps forward and bends down, trying to meet her eyes."
+    l "Donnie, why are you afraid?\nYou can tell me if you want to.\nI’m listening, always."
+    d "I’m afraid… that I’ll let you down.\nI’ll make you feel sorry for me.\nYou’re so nice, and everyone in the club… "
+    d "But I always make everyone worried… \nI’m the one who should have to bear these things. I’m used to it.\nI don’t want them to affect your emotions anymore."
+    show donna_sad:
+        linear 0.5 xalign 1.0 yalign 1.2
+    "Her voice gradually chokes up, eventually reaching a point where she can’t keep speaking anymore."
+    hide lindsey_neutral
+    show lindsey_sad:
+        xalign 0.4 yalign 1.2
+    "Lindsey looks at her, feeling a deep ache in her heart."
+    l "Donnie, How could that be? \nWhat I say next may be a bit presumptuous.\nIf anything makes you uncomfortable, please tell me—it’s okay."
+    l "You might think the unpleasant things you’ve experienced were meant to happen to you.\nBut I believe—"
+    l "Donnie, you’re a wonderful girl. You shouldn’t have gone through all that."
+    d "But in reality, these things did happen. I’m used to it… \nMy misfortune—if it even counts as that… "
+    d "I don’t think it matters much.\nIt’s just something I objectively experienced."
+    l "Donnie, do you know?\nYou are worthy of being loved."
+    "Donna freezes. It takes a few seconds for her to raise her head again.\nAfter a few seconds, she slowly looks up, her voice less composed."
+    show donna_sad:
+        linear 1.5 xalign 0.6 yalign 1.2
+    d "Of course, I know. You don’t need to tell me that… "
+    l "Donnie, you…you can try crying in front of me."
+    l "I’ll always be here for you."
+    scene cg_ep3_05_qy
+    with dissolve
+    d "……Wouldn’t this just trouble you?"
+    "Donna’s eyes were already turning red from her sadness. Because of this, she didn’t notice the glimmer of tears in Lindsey’s eyes."
+    l "Why say that? We’re friends, aren’t we? I’ll help you."
+    "Two tears roll down Donna’s cheeks, as if emotions buried for a long time had finally found an outlet. She hastily reaches up to wipe them away, but the tears won’t dry. Panicking, the girl stands up."
+    d "Sorry for not behaving myself. Could you leave me alone for a while?"
+    scene cg_embrace
+    with fade
+    "She stands up, trying to escape, to hide her vulnerability. But just as she was about to turn away, she felt a pair of warm hands gently wrap around her."
+    stop music fadeout 1.0
+    l "It’s okay to cry right here. I’ll protect you."
+    play music "audio/HE.mp3"
+    "The two embrace tightly. Lindsey can’t see Donna’s face, but she can feel the girl’s head slightly leaning on her shoulder, gradually sinking lower, becoming heavier."
+    "As the sobbing grows louder, the heart that has always pretended to be strong finally lays down its defenses."
+    d "Why are you saying such silly things… What do you understand?"
+    l "I’m sorry. Maybe I don’t understand you enough yet.\nPerhaps I was being presumptuous, thinking I could help you escape from this pain."
+    l "—But I’ll do my best to help you. Trust me, okay?"
+    l "I’m willing to face these difficulties with you and take small steps at a time to change things."
+    l "Donnie, no matter what happens, I’ll always be there to support you.\nYou’ll never have to face things alone anymore."
+    "The sound of one person’s crying gradually turns into a duet. At that moment, the weight of emotions fill the room, binding two hearts that had once been separated by heavy barriers tightly together."
+    jump goodending
+
+label badending:
+    $ tb_design = "normal"
+    scene bridge
+    with fade
+    play music "audio/BE.mp3"
+    "One month later."
+    "The club room feels emptier these days. Though people still gather here, something essential seems missing."
+    show allie_sad at left
+    with dissolve
+    show lindsey_sad
+    with dissolve
+    show mackenzie_sad at right
+    with dissolve
+    a "Has anyone heard from Donna lately? She hasn’t been to club activities in weeks… "
+    "Lindsey stares at her unfinished character illustrations, her usual energy noticeably dampened."
+    scene cg_goodend
+    with dissolve
+    l "She… she still comes to school. I see her sometimes in the hallway, but… "
+    scene cg_badendalt
+    with fade
+    k "But?"
+    l "She always turns away when she sees me. Like she’s trying to avoid everyone… "
+    "The room falls into uncomfortable silence. On the computer screen, Donna’s last script remains open - a story about a girl who chose solitude over the pain of connection."
+    a "Maybe we should try talking to her again?"
+    l "I’ve tried… She just says she’s busy with the honors classes. That she needs to focus on her studies… "
+    k "(sighing softly) Sometimes people aren’t ready to be helped, no matter how much we want to reach out."
+    scene classroom
+    with dissolve
+    show donna_afraid:
+        xalign 1.0 yalign 1.0
+        linear 3.0 xalign 3.0 yalign 1.0
+    "{nw}{p=0.25}"
+    hide donna_afraid
+    with dissolve
+    show lindsey_sad at left
+    "Lindsey spots a familiar figure at the end of the hallway - Donna, walking alone as always. \nBefore she can call out, Donna notices her and quickly turns down another corridor."
+    show lindsey_sad:
+        linear 0.5 xalign 0.3 yalign 1.0
+        linear 0.25 xalign 0.2 yalign 1.0
+    "Lindsey takes a step forward, then stops. Her hand, half-raised in greeting, slowly falls to her side."
+    scene game1
+    with dissolve
+    show wj_game at left
+    with dissolve
+    show wz_game
+    with dissolve
+    show lf_game at right
+    with dissolve
+    "That evening, three characters gather by the crystal - a red-haired catgirl, a pink-haired knight, and a white-haired dragon girl. The fourth character, a black-haired elf, hasn’t logged in for weeks."
+    "The friend list shows “Yurina - Last Online: 32 days ago”"
+    lg "I guess this is what she wanted… to go back to being alone."
+    ag "The game design club will still continue. We can… find another writer."
+    kg "Yeah… we’ll keep going."
+    "But everyone knows it won’t be the same. Their small circle had briefly drawn in someone who had always been alone. For a moment, it seemed like they might help her change."
+    "Instead, she chose the familiar comfort of isolation over the risk of being hurt again."
+    scene classroom
+    with fade
+    "One week later."
+    show lindsey_sad
+    with dissolve
+    "During lunch break, Lindsey notices Donna’s desk is empty. A classmate mentions she transferred to another class - one focused on advanced studies."
+    "Lindsey pulls out her phone, opening their chat history. Their last conversation remains unchanged - Donna’s final message simply reads: “Sorry, I need to focus on my studies. Please don’t worry about me.”"
+    "Lindsey begins typing: “I miss you. We all miss you. Please come back…”"
+    "But after staring at the words for a long moment, she deletes them without sending."
+    stop music fadeout 4.0
+    "Some distances, once created, become too wide to cross."
+    scene unitedbackground
+    with fade
+    "The end."
     return
+
+label goodending:
+    $ tb_design = "normal"
+    scene classroom
+    with dissolve
+    "Ever since that day in the club’s lab where she confessed her feelings to Lindsey, Donna gradually begins to open her heart."
+    show lindsey_neutral at left
+    with dissolve
+    show donna_neutral at right
+    with dissolve
+    "With Lindsey’s support, she courageously reports the bullying incidents in her class to the teachers."
+    "The bullies are given serious punishments and apologize to Donna."
+    "Though the past can’t be changed, in that moment, Donna feels a long-lost sense of relief, and the darkness of years of repression finally dissipates."
+    scene room1
+    with dissolve
+    "Encouraged by Lindsey, Donna also tries to reconcile with her mother. With the help of counseling and mental health therapies, she gradually adjusts her mindset and takes the first steps towards peace."
+    show mrsqu at left
+    with dissolve
+    show donna_happy at right
+    with dissolve
+    "During an ordinary dinner, Donna’s mother quietly places a piece of Donna’s favorite meal on Donna’s plate and softly says: “Mommy shouldn’t have been so harsh. Mommy just wanted you to reach happiness.”"
+    "At that moment, Donna’s eyes are filled with tears. She realizes that while challenges would still lie ahead, she is no longer alone."
+    scene cg_goodend
+    with fade
+    "The successful release of their game brings joy to the entire club."
+    "Donna’s script resonates with many players, Lindsey’s art is vivid and colorful, Allie’s music and Mackenzie’s programming makes the work complete and captivating."
+    "The team cheers and celebrates this hard-earned victory, brimming with anticipation for their next project. Looking at the smiles on everyone’s faces, Donna feels a warm current in her heart."
+    "For the first time, she experiences such a genuine sense of belonging—a group of supportive and hardworking partners who would always stand by her. "
+    "As everyone discusses their plans for the next project, Donna feels she is truly ready for both the challenges and the fun to come."
+    "This story, like an Easter egg in a game, becomes one of the most unforgettable treasures of her life."
+    scene unitedbackground
+    with fade
+    "Here marks the end of the story of Unique Gaming Girls - Reloaded Edition.\nIf this story touched your heart at any moment, then that is its truest influence."
+    "Producer: Juehe\nCreative Director: KoliQed\nStory: Yan Chen (Rain), Kevin Chen"
+    "Art: Amy Ding, Gabrielle Dela Cueva, Yaxuan Teng, Wendy Zeng, Akihi\nMusic & Sound: KoliQed, FallingStars, Ashlyn Dai, ProfBrian\nProgramming: KoliQed, Juehe"
+    "UI and Background Edits: Juehe\nQuality Assurance: Allen Yang\nTranslation and Miscellanous: Jannie Wang, Kevin Chen, CJ Cortes, Juehe"
+    "Special Thanks to: \nThe original Unique Gaming Girls developing team\nAll support from RDFZ Game Design, Show’s Chance and Dimensional Lab\nPlaytesters at USC Games"
+    "And YOU playing our game!"
+    
+
+    return
+    
+
+    
+
 
 
 label test:

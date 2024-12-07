@@ -39,7 +39,7 @@ Programming: KoliQed, Juehe\n
 UI and Background Edits: Juehe\n
 Quality Assurance: Allen Yang\n
 Translation and Miscellanous: Jannie Wang, Kevin Chen, CJ Cortes, Juehe\n
-Special Thanks: The original Unique Gaming Girls developing team, all support from RDFZ Game Design, and you playing our game!\n
+Special Thanks to: The original Unique Gaming Girls developing team, all support from RDFZ Game Design, Show’s Chance and Dimensional Lab, playtesters at USC Games, and you playing our game!\n
 Font Used: Elsie (creator: Alejandro Inler) ({a=https://fonts.google.com/specimen/Elsie/license}license is here{/a})\n
 """)
 
