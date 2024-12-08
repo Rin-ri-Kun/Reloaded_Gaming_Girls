@@ -20,10 +20,8 @@ define interludechoice2 = 0
 
 define SlowD = Dissolve(3.0)
 define weijiangfriendshippoints=0
-define add1 = False
-define add2 = False
-define add3 = False
-# The game starts here.
+
+
 
 #default tb_design = "normal"
 #while True: 
@@ -101,6 +99,8 @@ label splashscreen:
     hide unitedbackground
     with dissolve
     return
+
+# The game starts here.
 label start:
     $ tb_design = "normal"
     stop music
@@ -214,7 +214,7 @@ label onetwo:
     lg "Nah, that’s too boring. Let’s take some photos together! Come on!"
     dg "Photos?"
     lg "Yeah! You know, exploring scenic spots, posing with our characters, taking screenshots—don’t you know?"
-    dg "I’m solo…no one ever mentioned it to me."
+    dg "I’m solo… No one ever mentioned it to me."
     lg "Well, now you’ve got me! Playing together is way more fun. I love figuring out all the cool photo spots!"
     dg "…Alright."
     "They guide their characters to scenic spots in the game."
@@ -267,8 +267,8 @@ label onetwo:
     lg "You might meet people with similar interests that way."
     dg "Clubs? Are there any for gaming?"
     lg "There should be! Tomorrow’s the Club Fair. You down to come with?"
-    dg "Down to…what?"
-    lg "I mean…do you want to walk around with me?"
+    dg "Down to… What?"
+    lg "I mean… Do you want to walk around with me?"
     "Behind the screen, Donna nodded, then realized her friend couldn’t see it."
     "She quickly typed a reply. In the chat window’s corner, Yurina sent a simple, “Sure.”"
     scene darkness with dissolve
@@ -313,7 +313,7 @@ label onethree:
     "Lindsey feels another tug on her sleeve."
     d "I thought we were looking for a gaming club…"
     l "Oh—right, sorry, sorry! Got a little carried away there."
-    l "Alright, let’s see…where’s the gaming club…?"
+    l "Alright, let’s see, where’s the gaming club…?"
     d "Too loud…"
     hide lindsey_neutral
     show lindsey_neutral at left
@@ -356,7 +356,7 @@ label onethree:
     show donna_afraid:
         xalign 0.3
         yalign 1.0
-    l "So…you’re a ghost club?"
+    l "So… You’re a ghost club?"
     hide allie_neutral
     show allie_sad at right
     a "Don’t put it that way. The president, Mackenzie, and I are really dedicated to making this club work. I’ll handle music, she’s responsible for programming. We just need someone for art and writing…"
@@ -367,7 +367,7 @@ label onethree:
     hide lindsey_afraid
     show lindsey_neutral at left
     "Donna, who had been silent until now, suddenly spoke up."
-    d "Um…I can write a bit."
+    d "Um… I can write a bit."
     l "I could handle art—oh, wait!"
     hide lindsey_neutral
     show lindsey_angry at left
@@ -443,7 +443,8 @@ label onefour:
     show lf_game at right
     ag "Hey, wait! We need to talk about the club!"
     ag "Last time, you all disappeared before agreeing to join!"
-    #scene new CG
+    scene cg_ep1_4
+    with fade
     "As the dungeon load, monsters appeared on the screen, and the intense battle begin."
     "The monsters launch an AoE attack right off the bat, rapidly draining the team’s health."
     lg "Oh no! Someone heal me—I’m about to die!"
@@ -465,7 +466,7 @@ label onefour:
     ag "With you both, we can finally get our game off the ground!"
     hide lf_game
     show wj_game
-    lg "Hmm…well, working with you guys does sound kind of fun."
+    lg "Hmm… Well, working with you guys does sound kind of fun."
     lg "Even if it’s a “ghost club,” it doesn’t really matter."
     lg "Oh, and Donna wanted to find friends with similar interests, right?"
     hide wj_game
@@ -497,21 +498,21 @@ label onefour:
     show lf_game
     ag "…Originally, we planned to make a rhythm game."
     "Allie’s voice wavers slightly, as though still touched by Mackenzie’s reassurance. After a pause, her usual confident, teasing tone returns."
-    ag "But Mackenzie’s programming skills aren’t the best…Rhythm games are a bit complex for us, so we switched to a narrative-driven game."
+    ag "But Mackenzie’s programming skills aren’t the best… Rhythm games are a bit complex for us, so we switched to a narrative-driven game."
     lg "Narrative-driven? Like a galgame?"
     hide qy_game
     show wz_game at right
     kg "Isn’t that the kind of game otakus like?"
     ag "Highbrow folks call it a “visual novel” or “text adventure game”."
     kg "Basically, that’s it. When Allie and I were having our little“two-person world” in the clubroom, we thought it over~"
-    lg "You two…really get along well, huh."
+    lg "You two really get along well, huh."
     "Lindsey’s comment makes the voice channel fall silent."
     "An unspoken tension linger in the air, and no one rushes to break it."
     hide wj_game
     show qy_game at left
     "After a few seconds, Donna speaks calmly, bringing the conversation back on track."
     dg "So… Do you have a theme for the game yet?"
-    kg "Hmm…oh! How about a school setting?\nTragic, angsty stories of youth are always popular~"
+    kg "Hmm… Oh! How about a school setting?\nTragic, angsty stories of youth are always popular~"
     lg "Ooh, sounds intense!"
     ag "Hey, don’t listen to her rambling."
     ag "The game still has to pass the teacher’s review, anything weird is going to get us sent back to the drawing board!"
@@ -540,7 +541,7 @@ label onefour:
     lg "Hey, quit fighting! Actually, Donna could take on the writing—she’d be great at it!"
     hide wz_game
     show qy_game at right
-    dg "Oh… yes, I could."
+    dg "Oh… Yes, I could."
     hide qy_game
     with dissolve
     hide lf_game
@@ -626,9 +627,7 @@ label twotwo:
             "So, she bites her lip, trying hard not to make a sound."
             "Getting no answer, Lindsey stands at the door looking around. Soon, she spots Donna sitting in the last row, hiding behind her laptop screen."
         "Timidly responds to Lindsey. ":
-            if add1 == False:
-                $ add1 = True
-                $ weijiangfriendshippoints+=1
+            $ weijiangfriendshippoints+=1
             "Donna peeks out from behind her computer screen. Nervously, she trembles as she waves her hand, gesturing to Lindsey to come over. Then, in a tiny voice, she answers:"
             d "…I’m here. Don’t call so loudly, there are so many people…"
     l "Ah, Donnie, so that’s where you are! Good afternoon!"
@@ -648,7 +647,7 @@ label twotwo:
     "Lindsey playfully winks at her."
     l "Because I have magic— Just kidding, I guessed! Since you’re a “Star Student” with straight As! I had a feeling you’d take study hall to complete homework."
     l "This is called— a pop inspection! Let me see if you’re secretly studying behind my back—"
-    "The fluffy blonde head suddenly leans in next to Donna, eyes fixed unblinkingly on her computer. —On the screen is a new blank document."
+    "The fluffy blonde head suddenly leans in next to Donna, eyes fixed unblinkingly on her computer. On the screen is a new blank document."
     d "Ah, I’m not studying… I was trying to write our game script, but I can’t think of any ideas."
     l "Oh? Is that so? Where are you stuck? Maybe like we discussed last time, try writing about your own experiences. If you really can’t think of anything from your own experience, how about writing about teenage themes? Like a romantic comedy? Have you ever…"
     hide lindsey_happy
@@ -688,7 +687,7 @@ label twothree:
     dm "You’re just a child, what do you know about tragedy? You’ve always had enough to eat and wear at home, what could you possibly be unhappy about?"
     "Young Donna just sat there on the bed, listening and watching. In her ears rang that woman’s seemingly endless mockery, while before her eyes, the drafts she had poured her heart into were mercilessly torn to shreds."
     scene cg_ep2_3
-    "Donna’s fingers lightly tap on the desk— While writing the script just now, she had drifted into memories of those past fragments."
+    "Donna’s fingers lightly tap on the desk. While writing the script just now, she had drifted into memories of those past fragments."
     "Actually, writing stories was what she was best at and what she loved most. Whenever the characters in her writing experienced misfortune, her heart would tremble, as if she could feel their pain."
     "However, her mother’s cold mockery always drew her into a whirlpool of self-doubt."
     scene cg_ep3_3
@@ -749,7 +748,7 @@ label twofour:
     with dissolve
     stop music fadeout 1.0
     "Donna’s story is heavy.\nThe title of the story is “Flying Downward”, and it tells the story of…\nA person who took their own life."
-    "The story is short, narrating the thoughts of a high school girl as she jumps from a great height, reflecting on her life—\na life that, unfortunately, didn’t contain much happiness."
+    "The story is short, narrating the thoughts of a high school girl as she jumps from a great height, reflecting on her life—\nA life that, unfortunately, didn’t contain much happiness."
     "The writing is filled with a stream-of-consciousness flow of questions and accusations.\nThe girl is puzzled by the injustices of society and the frustrations of her life."
     "She doesn’t understand where her father, who frequently stayed out all night, went.\nNor does she understand why her mother always unleashed anger on her, as if she were the source of all the family’s misfortunes."
     "Even more, she doesn’t understand why her quiet personality was seen as a weakness, making her a target for bullying and mockery from her classmates."
@@ -855,20 +854,18 @@ label interlude1:
     "Monday, 4 PM, the school bell rings.\nUnlike her hurrying classmates, Donna packs her bag slowly.\nShe’s clearly lost in thought."
     d "{i}During the last meeting, the club president mentioned we need to do club activities once a week… {/i}"
     d "{i}Who should I go with today?{/i}"
-    d "{i}Hmm… Lindsey mentioned she’d be drawing on the bench in the central garden after school. Going to find her would probably be lively and energetic… {/i}"
+    d "{i}Hmm… Lindsey mentioned she’d be drawing on the bench in the Central Garden after school. Going to find her would probably be lively and energetic… {/i}"
     d "{i}But if I go find Mackenzie and Allie, they should be in the computer room preparing for club projects, that might be more relaxed and casual… {/i}"
     d "{i}Which should I choose?{/i}"
     menu:
         "What will Donna choose?"
-        "Go to the central garden to find Lindsey":
+        "Go to the Central Garden to find Lindsey":
             $ interludechoice1 = 1
-            if add2 == False:
-                $ add2 = True
-                $ weijiangfriendshippoints += 1
+            $ weijiangfriendshippoints += 1
             scene garden
             with dissolve
             play music "<loop 4.58>audio/bgm1ok.mp3"
-            "Donna decides to go to the central garden to find Lindsey.\nFrom afar, she sees Lindsey sitting on the garden bench."
+            "Donna decides to go to the Central Garden to find Lindsey.\nFrom afar, she sees Lindsey sitting on the garden bench."
             show lindsey_neutral:
                 xalign 1.0
                 yalign 1.0
@@ -888,7 +885,7 @@ label interlude1:
             "Donna looks up to see excitement sparkling in Lindsey’s bright eyes."
             "She waves at Donna, her smile brimming with undisguised joy."
             "Despite knowing each other for a while now, Lindsey’s unrestrained enthusiasm still catches her off guard."
-            "Donna awkwardly lowers her head, Feeling her cheeks grow slightly warm."
+            "Donna awkwardly lowers her head, feeling her cheeks grow slightly warm."
             d "I… I just thought this place was closer, that’s all."
             l "That’s perfect then~ We can go to club activities together."
             show lindsey_happy:
@@ -910,7 +907,7 @@ label interlude1:
             show donna_happy at right
             show frame
             with fade
-            "Lindsey took a photo with you together!"
+            "Lindsey took a photo with Donna together."
             scene garden
             with dissolve
             show lindsey_neutral
@@ -1002,19 +999,17 @@ label interlude2:
     "It’s the weekly club activity day again… \nWho should I go with today?"
     menu:
         "What will Donna choose?"
-        "Go to the central garden to find Lindsey":
+        "Go to the Central Garden to find Lindsey":
             $ interludechoice2 = 1
-            if add3 == False:
-                $ add3 = True
-                $ weijiangfriendshippoints += 1
+            $ weijiangfriendshippoints += 1
             scene garden
             with dissolve
             play music "<loop 4.58>audio/bgm1ok.mp3"  
             if interludechoice1 == 1:
-                "Donna comes to the central garden again."
+                "Donna comes to the Central Garden again."
                 "She’s wondering if Lindsey would be drawing on the bench again."
             else: 
-                "Donna comes to the central garden this time."
+                "Donna comes to the Central Garden this time."
             show lindsey_happy with dissolve:
                 xalign 1.0 yalign 1.0
                 linear 0.2 xalign 0.75 yalign 0.3
@@ -1075,7 +1070,7 @@ label interlude2:
             show lindsey_neutral at right
             with dissolve 
             "Some time later, a cup of milk tea appears on Donna’s desk too."
-            "It’s from Lindsey, who was sketching in the central garden."
+            "It’s from Lindsey, who was sketching in the Central Garden."
             "Everyone discusses together the allocation of the game project’s remaining tasks."
             hide mackenzie_neutral
             hide allie_neutral
@@ -1155,7 +1150,7 @@ label threetwo:
     show donna_afraid
     "Although it feels a bit too direct to ask, once the question left her mouth, Lindsey couldn’t take it back."
     d "Didn’t the seniors suggest basing it on real experiences?\nSo I tried writing about my own story."
-    d "—but I did add some artistic adjustments, I haven’t actually jumped off a building yet."
+    d "But I did add some artistic adjustments, I haven’t actually jumped off a building yet."
     l "Then… What about the other parts?"
     d "If it’s about my family, those parts are mostly real."
     d "My father really has been messing around with women other than my mother, and my mother… thinks I’m the burden of her failed marriage."
@@ -1182,7 +1177,7 @@ label threetwo:
     "But she quickly recovers, her face showing confusion."
     d "Lindsey, why are you crying? Are you okay? Do you need a tissue?"
     l "Why are you comforting me? It should be me comforting you…"
-    l "—you’re the one who’s been hurt… why aren’t you upset?\n—How can you speak so calmly about all of this?"
+    l "You’re the one who’s been hurt… why aren’t you upset?\nHow can you speak so calmly about all of this?"
     scene cg_ep3_2_02
     "Donna pauses for a moment before handing her a tissue.\nShe then spoke in that calm voice again."
     d "I don’t think there’s anything to be upset about.\nThese things are just things that happened to me."
@@ -1245,7 +1240,7 @@ label threefour:
     $ tb_design = "weijiang"
     scene room2
     with fade
-    play music "audio/school2.mp3"
+    play music "audio/something2.mp3"
     "It is late at night, but Lindsey can’t sleep. She tosses and turns, her mind filled with Donna’s cold expression from that afternoon. Looking through her phone contacts, Lindsey hesitates before finally dialing Allie’s number."
     scene cg_ep3_4
     a "Hello, Lindsey? It’s so late, is something wrong?"
@@ -1390,7 +1385,7 @@ label threefive:
     "As the sobbing grows louder, the heart that has always pretended to be strong finally lays down its defenses."
     d "Why are you saying such silly things… What do you understand?"
     l "I’m sorry. Maybe I don’t understand you enough yet.\nPerhaps I was being presumptuous, thinking I could help you escape from this pain."
-    l "—But I’ll do my best to help you. Trust me, okay?"
+    l "But I’ll do my best to help you. Trust me, okay?"
     l "I’m willing to face these difficulties with you and take small steps at a time to change things."
     l "Donnie, no matter what happens, I’ll always be there to support you.\nYou’ll never have to face things alone anymore."
     "The sound of one person’s crying gradually turns into a duet. At that moment, the weight of emotions fill the room, binding two hearts that had once been separated by heavy barriers tightly together."
